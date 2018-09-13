@@ -746,7 +746,7 @@ ul li{
 .des-small img:hover{ border:1px solid #ff6600}
 
 .focus_on{display: none;}
-.detail_base_M{width: 580px;padding: 0px 20px;position: relative;}
+.detail_base_M{width: 580px;padding: 0px 15px 0px 20px;position: relative;}
 .detail_base_M>h4{line-height: 40px;}
 .detail_base_M>h4>font{
 	font-size: 12px;

@@ -6,46 +6,9 @@
 		<script type="text/javascript" src="js/jquery.js" ></script>
 		<script type="text/javascript" src="js/yhd.js" ></script>
 		<link rel="stylesheet" type="text/css" href="css/yhd.css"/>
-		<script src="js/jquery.jqzoom-core(1).js" type="text/javascript" charset="utf-8"></script>
-<style type="text/css">
-/*jQzoom*/
-.jqzoom{
-  /*border:1px solid #BBB;*/
-  float:left;
-  position:relative;
-  /*padding:0px;*/
-  cursor:move;
-}
-.zoomdiv {
-  z-index:  999;
-  position        : absolute;
-  top:0px;
-  left:0px;
-  width          : 300px;
-  height         : 300px;
-  background: #ffffff;
-  border:1px solid #CCCCCC;
-  display:none;
-  text-align: center;
-  overflow: hidden;
-}
-.jqZoomPup {
-  z-index         : 999;
-  visibility       : hidden;
-  position        : absolute;
-  top:0px;
-  left:0px;
-  width          : 1px;
-  height         : 1px;
-  border: 1px solid #aaa;
-  /*background: #ffffff url(/images/shopping/zoomlens.gif) 50% top no-repeat;*/
-  background: #ffffff 10%;
-  opacity: 0.5;
-  -moz-opacity: 0.5;
-  -khtml-opacity: 0.5;
-  filter: alpha(Opacity=50);
-}
-</style>
+		<link rel="stylesheet" type="text/css" href="css/magnifier.css"/>
+		<!--<script src="js/jquery.jqzoom-core(1).js" type="text/javascript" charset="utf-8"></script>-->
+		<script type="text/javascript" src="js/magnifier.js" ></script>
 	</head>
 	<body>
 		<!--头部-->
@@ -109,7 +72,11 @@
 							<div id="">
 								<span><b>宝贝许愿坊  童装女装套装</b></span>
 								<p>深蓝 140码</p>
-								<p><input type="button" name="" id="" value="-" /><input type="text" name="" id="" value="1" /><input type="button" name="" id="" value="+" /><span>￥190</span></p>
+								<p>
+									<input type="button" name="" class="cart_minus" value="-" /><input type="text" name="" id="" value="1" class="count_text"/><input type="button" name="" class="cart_plus" value="+" />
+									<span>￥<b class="cart_hide_price">190</b></span>
+								</p>
+								<font style="display: none;">190</font>
 							</div>
 						</div>
 						<span>参加一项促销，节约成本￥100</span>
@@ -119,7 +86,11 @@
 							<div id="">
 								<span><b>亨氏 乐维滋清乐2+2果汁</b></span>
 								<p>草莓山楂枸杞</p>
-								<p><input type="button" name="" id="" value="-" /><input type="text" name="" id="" value="1" /><input type="button" name="" id="" value="+" /><span>￥5.8</span></p>
+								<p>
+									<input type="button" name="" class="cart_minus" value="-" /><input type="text" name="" id="" value="1"  class="count_text"/><input type="button" name="" class="cart_plus" value="+" />
+									<span>￥<b>5.8</b></span>
+								</p>
+								<font style="display: none;">5.8</font>
 							</div>
 						</div>
 						<p style="margin-top: 10px;"><b>珠韵首饰旗舰店</b><span>共1件商品</span></p>
@@ -128,7 +99,9 @@
 							<div id="">
 								<span><b>珠韵首饰 大粒径 9.1-1·</b></span>
 								<p>淡水白色近圆珍珠</p>
-								<p><input type="button" name="" id="" value="-" /><input type="text" name="" id="" value="1" /><input type="button" name="" id="" value="+" /><span>￥758</span></p>
+								<p><input type="button" name="" class="cart_minus" value="-" /><input type="text" name="" id="" value="1" class="count_text" /><input type="button" name="" class="cart_plus" value="+" />
+								<span>￥<b id="cart_hide_price">758</b></span></p>
+								<font style="display: none;">758</font>
 							</div>
 						</div>
 						<span>全场包邮</span>
@@ -187,28 +160,47 @@
 					</ul>
 					<div class="detail_start_base fl" style="margin-bottom: 20px;">
 						<div class="detail_base_L fl">
+
+							<div class="magnifier fl" id="magnifier1">
+								<div class="magnifier-container">
+									<div class="images-cover"></div>
+									<!--当前图片显示容器-->
+									<div class="move-view"></div>
+									<!--跟随鼠标移动的盒子-->
+								</div>
+								<div class="magnifier-assembly">
+									
+									<div class="magnifier-line">
+										<ul class="clearfix animation03">
+											<li>
+												<div class="small-img">
+													<img src="images/Z1.png" />
+												</div>
+											</li>
+											<li>
+												<div class="small-img">
+													<img src="images/Z2.png" />
+												</div>
+											</li>
+											<li>
+												<div class="small-img">
+													<img src="images/Z3.png" />
+												</div>
+											</li>
+											<li>
+												<div class="small-img">
+													<img src="images/Z4.png" />
+												</div>
+											</li>
+											
+										</ul>
+									</div>
+									<!--缩略图-->
+								</div>
+								<div class="magnifier-view"></div>
+								<!--经过放大的图片显示容器-->
+							</div>
 							
-							<div class="item fl">
-							
-					            <a class="big-photo jqzoom">
-					            	<!--<div class="jqzoom">-->
-					                	<img src="images/Z1small.png" alt="big" jqimg="images/Z1big.png" id="bigImg"/>
-					                	
-					                <!--</div>-->
-					            </a>
-					            <a class="des-small">
-					                <img src="images/Z1small.png" alt="small"jqimg="images/Z1big.png"/>
-					            </a>
-					            <a class="des-small">
-					                <img src="images/Z2small.png" alt="small"jqimg="images/Z2big.png"/>
-					            </a>
-					            <a class="des-small">
-					                <img src="images/Z3small.png" alt="small"jqimg="images/Z3big.png"/>
-					            </a>
-					            <a class="des-small">
-					                <img src="images/Z4small.png" alt="small"jqimg="images/Z4big.png"/>
-					            </a>
-					        </div>
 					       <div class="clear"></div>
 							
 							
@@ -404,7 +396,7 @@
 								</div>
 							</div>	
 						</div>
-						<div class="detail_base_R fl">
+						<div class="detail_base_R fr">
 							<div class="detail_baseR_chg">
 								<p>看了还看
 									<a>
@@ -1179,15 +1171,37 @@
 		</div>
 	</body>
 </html>
-<script type="text/javascript" src="js/jquery.imagezoom.min.js" ></script>
+<!--<script type="text/javascript" src="js/jquery.imagezoom.min.js" ></script>-->
 <script type="text/javascript">
+//
+//$(".jqzoom").jqueryzoom({
+//  xzoom: 560, //放大图的宽度(默认是 200)
+//  yzoom: 400, //放大图的高度(默认是 200)
+//  offset: 10, //离原图的距离(默认是 10)
+//  position: "right", //放大图的定位(默认是 "right")
+//  preload: 1
+//});
 
-$(".jqzoom").jqueryzoom({
-    xzoom: 560, //放大图的宽度(默认是 200)
-    yzoom: 400, //放大图的高度(默认是 200)
-    offset: 10, //离原图的距离(默认是 10)
-    position: "right", //放大图的定位(默认是 "right")
-    preload: 1
+$(function() {
+	
+	var magnifierConfig = {
+		magnifier : "#magnifier1",//最外层的大容器
+		width : 400,//承载容器宽
+		height : 400,//承载容器高
+		moveWidth : null,//如果设置了移动盒子的宽度，则不计算缩放比例
+		zoom : 5//缩放比例
+	};
+
+	var _magnifier = magnifier(magnifierConfig);
+
+	/*magnifier的内置函数调用*/
+	/*
+		//设置magnifier函数的index属性
+		_magnifier.setIndex(1);
+
+		//重新载入主图,根据magnifier函数的index属性
+		_magnifier.eqImg();
+	*/
 });
 
 </script>
