@@ -75,26 +75,59 @@ $(document).ready(function(){
 	});
 	//加减
 	var cart_hide_count=1;
-	var _init=parseFloat($(".cart_hide_price").text());
-//	var l_init=
+	
+	
 	$(".cart_plus").click(function(){
-		cart_hide_count++;
-		
-		$(this).parent().find(".count_text").val(cart_hide_count);
-		var sum=cart_hide_count*_init;
+		var t=$(this).parent().find(".count_text");
+		if(t.val()==""||undefined||null){
+			t.val(0);
+		}
+		t.val(parseInt(t.val())+1);
+		var sum=0;
+//		alert(p);
+		var _init=parseFloat($(this).parent().siblings("font").text());
+		if(parseInt(t)==""||undefined||null||isNaN(t)||isNaN(parseInt(t))){
+			t=0;
+		}
+		var a=$(this).parent().find(".count_text").val();
+//		alert(a);
+		sum=parseInt(a)*parseFloat(_init);
+		sum=sum.toFixed(1);
 //		alert(sum);
-		$(".cart_hide_price").text(sum);
+
+		$(this).next().find("b").text(sum);
+
 	})
 	$(".cart_minus").click(function(){
-		if(cart_hide_count>1){
-			cart_hide_count--;
-//			var _init=parseFloat($(this).siblings("span").children("b").text())/(cart_hide_count-1);
-			$(this).next().val(cart_hide_count);
-			var sum=cart_hide_count*_init;
-	//		alert(sum);
-			$(".cart_hide_price").text(sum);
+		var t=$(this).parent().find(".count_text");
+		if(t.val()<=1){
+			return;
+		}else{
+			if(t.val()==""||undefined||null){
+				t.val(0);
+			}
+			t.val(parseInt(t.val())-1);
 		}
 	})
+
+
+
+
+
+
+
+
+
+
+//	$(".cart_minus").click(function(){
+//		if(cart_hide_count>1){
+//			cart_hide_count--;
+////			var _init=parseFloat($(this).siblings("span").children("b").text())/(cart_hide_count-1);
+//			$(this).next().val(cart_hide_count);
+//			var sum=cart_hide_count*_init;
+//			$(".cart_hide_price").text(sum);
+//		}
+//	})
 	
 	
 
