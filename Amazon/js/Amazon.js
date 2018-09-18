@@ -28,7 +28,7 @@ $(function(){
 		$(this).parent().hide();
 	})
 	
-	$(".depart_list>li").hover(function(){
+	$(".depart_list li").hover(function(){
 		$(this).addClass("department_hide_chg");
 	},function(){
 		$(this).removeClass("department_hide_chg");
@@ -48,5 +48,17 @@ $(function(){
 	},function(){
 		$(this).find(".EN_hide").hide();
 	})
+	//头部登录
+	$(".sign_in").hover(function(){
+		$(this).find(".signIn_hide").show();
+	},function(){
+		$(this).find(".signIn_hide").hide();
+	})
 	
+	//try_prime显示
+	$(".try_prime").hover(function(){
+		$(this).find(".R_try_hide").show();
+	},function(){
+		$(this).find(".R_try_hide").hide();
+	})
 })
