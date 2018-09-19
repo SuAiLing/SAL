@@ -1,6 +1,10 @@
 
 header{
 	width: 100%;
+	/*position: relative;*/
+}
+body{
+	position: relative;
 }
 .f12{font-size: 12px;}
 .f14{font-size: 14px;}
@@ -217,12 +221,12 @@ ul li{
 /*department下拉*/
 .department_hide{
 	width: 100%;
-	position: fixed;
+	position: absolute;
 	background:rgba(0,0,0,0.2);
 	height: 100%;
 	display: none;
 	left: 0px;
-	top: 140px;
+	/*top: 0px;*/
 }
 .department_hide>ul{
 	position: absolute;
@@ -291,11 +295,12 @@ ul li{
 	/*padding-left: 50px !important;*/
 }
 .EN_hide,.signIn_hide,.R_try_hide{
-	position: fixed;
+	position: absolute;
 	width: 100%;
 	height: 100%;
 	background:rgba(0,0,0,0.2);
 	left: 0px;
+	top: 140px;
 	display: none;
 }
 .EN_hide_primary{
@@ -366,14 +371,34 @@ ul li{
 	color: #e68405;
 	text-decoration: underline;
 }
+.R_try_hide{
+	
+}
 .R_try_hide>div{
-	padding: 10px;
-	width: 335px;
+	padding: 15px;
 	background-color: white;
 	position: absolute;
-	right: 80px;
-	cursor: pointer;
+	right: 20px;
+	width: 340px;
+	text-align: center;
 }
+.R_try_hide_content{
+	padding: 30px 25px;
+	width: 310px;
+	height: 390px;
+	background-color: #36c2b4;
+	cursor: pointer;
+	line-height: 30px;
+	color: white;
+}
+.R_try_hide_content button{
+	/*width: 200px;*/
+	color: black;
+	background-color: #f2cb6a;
+	border: #c89411 1px solid;
+	
+}
+.R_try_hide_content button:hover{background-color: #eebd40;border: #c89411 1px solid;}
 
 /*分类页正文*/
 
@@ -401,4 +426,131 @@ ul li{
 	margin-bottom: 20px;
 	background-color: #f7f7f7;
 	padding-bottom: 20px;
+}
+/*department正文底部*/
+.departmrnt_content_bottom{
+	font-size: 13px;
+	padding-top: 30px;
+	border-top: 1px #CCCCCC solid;
+	text-align: left;
+	line-height: 25px;
+}
+.departmrnt_content_bottom ul li a{
+	color: #333333;
+}
+/*底部登录*/
+.footer_signiIn{
+	margin-top: 70px;
+	border: 1px #CCCCCC solid;
+	border-radius: 5px;
+	padding-left: 30px;
+	text-align: center;
+	
+}
+.footer_signiIn>p{
+	font-size: 20px;
+	line-height: 40px;
+	text-align: left;
+}
+.footer_signiIn>div button{
+	width: 200px;
+	background-color: #f2cb6a;
+	border: #c89411 1px solid;
+}
+.footer_signiIn>div button:hover{background-color: #eebd40;border: #c89411 1px solid;}
+.footer_signiIn>div>p{
+	line-height: 30px;
+}
+.footer_signiIn>div>p a{color: #31B0D5;}
+.footer_signiIn>div>p a:hover{
+	color: #e68405;
+	text-decoration: underline;
+}
+
+/*底部回到top按钮*/
+.footer_back a{
+	display: block;
+	width: 100%;
+	background-color: #37475a;
+	text-align: center;
+	color: white;
+	padding: 15px 0px;
+}
+.footer_back a:hover{
+	text-decoration: none;
+	background-color: #485769;
+}
+/*底部关于窗*/
+.footer_about{
+	padding: 40px 0px 40px 0px;
+	background-color: #232f3e;
+	
+}
+.footer_about_content{
+	width: 1000px;
+	margin: 0 auto;
+}
+.footer_about_content ul{
+	padding-right: 85px;
+}
+.footer_about_content ul p{
+	color: white;
+}
+.footer_about_content ul li a{
+	color: #DDDDDD;
+	font-size: 13px;
+}
+.footer_about div:nth-of-type(2){
+	text-align: center;
+	border-top: 1px #3a4553 solid;
+	height: 70px;
+	padding-top: 30px;
+}
+.footer_about div:nth-of-type(2)>a{
+	margin-right: 80px;
+}
+.footer_about div:nth-of-type(2) button{
+	height: 33px;
+	background-color: transparent;
+	color: #DDDDDD;
+	border: #848688 1px solid;
+	border-radius: 3px;
+	padding-right: 30px;
+}
+.footer_about div:nth-of-type(2) button img{
+	vertical-align: middle;
+	margin-right: 5px;
+}
+.footer_about div a+button{
+	background: url(../img/footer_ico.png) no-repeat 90px;
+}
+/*最底部*/
+.footer_bottom{
+	background-color: #131a22;
+}
+.footer_bottom_content{
+	line-height: 10px;
+	padding: 40px 0px 40px 0px;
+}
+.footer_bottom_content ul{
+	width: 130px;
+	margin-right: 40px;
+}
+.footer_bottom_content ul li{
+	margin-bottom: 15px;
+}
+.footer_bottom_content ul li a{
+	color: #999999;
+}
+.footer_bottom_content ul li a span{
+	display: block;
+	color: #dddddd;
+}
+.copy_right{
+	margin-top: 20px;
+	text-align: center;
+	color: #999999;
+}
+.copy_right a{
+	color: #DDDDDD;
 }
