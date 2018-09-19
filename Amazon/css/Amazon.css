@@ -374,3 +374,31 @@ ul li{
 	right: 80px;
 	cursor: pointer;
 }
+
+/*分类页正文*/
+
+.departmrnt_content1{
+	width: 270px;
+	margin-right: 20px;
+	text-align: left; 
+	
+}
+.departmrnt_content1 p{
+	line-height: 40px;
+	padding-left: 20px;
+}
+.departmrnt_content1 img{
+	/*margin: 20px;*/
+	/*margin-top: 20px;*/
+}
+.departmrnt_content1 ul li{
+	line-height: 25px;
+	font-size: 13px;
+	padding-left: 20px;
+}
+.departmrnt_content1 ul li a{color: #333333;}
+.departmrnt_content_primary{
+	margin-bottom: 20px;
+	background-color: #f7f7f7;
+	padding-bottom: 20px;
+}
