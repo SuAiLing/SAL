@@ -55,34 +55,44 @@
 .cart_views{
 	padding-right: 25px;
 	margin-bottom: 50px;
+	/*width: 1200px;*/
 }
-.cart_views>p:nth-of-type(2){
-	font-size: 15px;
-	
-}
-.cart_views .row{
+.cart_views>div{
 	width: 1200px;
 	margin: 0 auto;
+	overflow: hidden;
 }
-.cart_views .row div{
+.cart_views>div>p:first-of-type{
+	font-size: 20px;
+	color: #444444;
+}
+.cart_views>div>p:nth-of-type(2){
+	font-size: 13px;
+	color: #444444;
+}
+.cart_views .viewed_list{
+	width: 2400px;
+	
+}
+.cart_views .viewed_list div{
 	width: 150px;
 	text-align: left;
 	margin-right: 50px;
 }
-.cart_views .row div img{
+.cart_views .viewed_list div img{
 	margin-bottom: 10px;
 }
-.cart_views .row div p{
+.cart_views .viewed_list div p{
 	line-height: 10px;
 }
-.cart_views .row div p a:hover{
+.cart_views .viewed_list div p a:hover{
 	color: #D58512;
 	text-decoration: none;
 }
-.cart_views .row div p:nth-of-type(3){
+.cart_views .viewed_list div p:nth-of-type(3){
 	height: 12px;
 }
-.cart_views .row div p img{
+.cart_views .viewed_list div p img{
 	vertical-align: middle;
 }
 .cart_price a{color: #D58512 !important;}
@@ -120,4 +130,10 @@
 .cart_view_bottom a:hover{
 	color: #D58512 !important;
 	text-decoration: none !important;
+}
+.cart_views{
+	
+}
+.cart_views>.row{
+	
 }

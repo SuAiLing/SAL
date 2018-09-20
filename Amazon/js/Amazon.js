@@ -72,27 +72,70 @@ $(function(){
 	})
 	
 	//左右切换
-	$(".index_3").mouseover(function(){
-		$(".index_3>b").show();
+	$(".index_scroll").mouseover(function(){
+		$(this).find("b").show();
 	}).mouseout(function(){
-		$(".index_3>b").hide();
+		$(this).find("b").hide();
 	});
-	$(".slide_l").click(function(){
-		var $a=parseInt($(".slideLR").css("marginLeft"));
+	
+	 $('.slide_l').click(function () {
+     	var $b = parseInt($(this).parent().scrollLeft());
+//		     	alert($b)
+     	if ($b == 0) {
+     		return false;
+     	} else{
+     		$(this).parent().animate({scrollLeft: $b-1233+"px"},500);	
+     	}
+//		     	 event.stopPropagation();
+    });
+    $('.slide_r').click(function () {
+    	var $b = parseInt($(this).parent().scrollLeft());
+//		    	alert($b)
+    	if ($b == 2434) {
+    		 return false;
+    	} else{
+    		$(this).parent().animate({scrollLeft: $b+1233+"px"},500);
+    	}
+    });
+	$(".slideLR>ul li").hover(function(){
+		$(this).find("button").show();
+	},function(){
+		$(this).find("button").hide();
+	})
+	
+	
+	//index_5的点击切换
+	$(".index5_r_l").click(function(){
+		var $a=parseInt($(".index_5_r>div").css("marginLeft"));
 //		alert($a)
-		if($a==0){
-			return false;
-		}else{
-			$(".slideLR").animate({marginLeft:$a+1200+"px"},1000);
-		}
-	});
-	$(".slide_r").click(function(){
-		var $a=parseInt($(".slideLR").css("marginLeft"));
+		if ($a == 0) {
+    		 return false;
+    	} else{
+    		$(".index_5_r>div").animate({marginLeft:$a+150+"px"},500);
+    	}
+	})
+	$(".index5_r_r").click(function(){
+		var $a=parseInt($(".index_5_r>div").css("marginLeft"));
 //		alert($a)
-		if($a==-2400){
-
-		}else{
-			$(".slideLR").animate({marginLeft:$a-1200+"px"},1000);
-		}
+		if ($a == -450) {
+    		 return false;
+    	} else{
+    		$(".index_5_r>div").animate({marginLeft:$a-150+"px"},500);
+    	}
+	})
+	
+	//注册
+	//箭头
+	$(".register_content>h6:nth-of-type(2) a").hover(function(){
+		$(this).find("img").toggle();
+	},function(){
+		$(this).find("img").toggle();
+	})
+	//点击框
+	$(".register_content>ul input").click(function(){
+		$(this).css({"border":" 1px #e77600 solid","box-shadow": "0px 0px 5px #e77600"});
+//		$(this).addClass("reg_input_chg");
+	}).blur(function(){
+		$(this).css({"border":" 1px #949494 solid","box-shadow": "0px 0px 5px transparent"})	
 	})
 })

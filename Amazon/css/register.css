@@ -3,7 +3,7 @@
 }
 .register_content{
 	width: 350px;
-	margin: 0 auto;
+	margin: 20px auto;
 	border: 1px #CCCCCC solid;
 	border-radius: 5px;
 	padding: 22px 20px 22px 20px;
@@ -11,4 +11,88 @@
 .register_content>p{
 	font-size: 28px;
 	color: black;
+}
+.register_content>ul li>p{
+	line-height: 10px;
+	height: 10px;
+	margin-top: 12px;
+}
+/*.register_content>ul li input{border: 1px #949494 solid !important;}*/
+.register_content>ul>span{
+	margin-top: 5px;
+	font-size: 12px;
+	line-height: 15px;
+	display: block;
+}
+.register_content>ul>span img{
+	margin-right: 10px;
+}
+.register_content>button{
+	width: 308px;
+	height: 30px;
+	background-color: #f2cb6a;
+	border: #c89411 1px solid;
+	border-radius: 3px;
+	color: black;
+	font-size: 13px;
+}
+.register_content>button:hover{background-color: #eebd40;border: #c89411 1px solid;}
+.register_content>h6{
+	font-size: 12px;
+	margin-top: 15px;
+}
+.register_content>h6 a{color: #0066c0;}
+.register_content>h6 a:hover{color: #E47923;}
+.cart_shadow{
+    background:linear-gradient(to bottom,rgba(0,0,0,.14),rgba(0,0,0,.03) 3px,transparent);
+    height: 20px;
+    margin-top: 30px;
+}
+.bd{
+	background:linear-gradient(to right,#fff,rgba(255,255,255,0),#fff);
+	z-index: 1;
+	height: 20px;
+}
+footer>ul{
+	font-size: 12px;
+}
+.reg_input_chg{
+	border: 1px #e77600 solid;
+	box-shadow: 0px 0px 5px #e77600;
+}
+footer>p{
+	font-size: 12px;
+}
+
+
+
+/*登录*/
+.order {
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+}
+.order .line {
+    display: inline-block;
+    width: 125px;
+    border-top: 1px solid #ccc ;
+}
+.order .txt {
+    color: #686868;
+    vertical-align: -4px;
+    font-size: 12px;
+}
+.register>button{
+	margin-top: 10px;
+	color: black;
+	font-size: 13px;
+	width: 350px;
+	height: 30px;
+	border-radius: 3px;
+	background-color: #edeef1;
+	border: 1px #adb1b8 solid;
+}
+.register>button:hover{
+	background-color: #D4D4D4;
+	/*border: 1px #adb1b8 solid;*/
 }
