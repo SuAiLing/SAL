@@ -1,0 +1,123 @@
+.shoppingcart_content{
+	padding: 20px 20px ;
+	
+}
+.cart_topL{width: 970px;}
+.cart_topL1{
+	border: 1px solid #c9e1f4;
+	
+	border-radius: 5px;
+	padding: 5px 20px;
+}
+.cart_topL1 div:nth-of-type(2){
+	margin: 15px 0px 0px 15px;
+	line-height: 20px;
+	
+}
+.cart_topL1 div:nth-of-type(2) p:first-of-type{
+	color: #00464f;
+	font-size: 20px;
+}
+.cart_topL1>button{
+	background-color: #eeeff1;
+	color: #0f1110;
+	border-radius: 3px;
+	margin-top: 22px;
+}
+.cart_topL2>div:first-of-type{
+	font-size: 25px;
+	color: black;
+	line-height: 45px;
+}
+.cart_topL2>p{
+	line-height: 10px;
+	font-size: 12px;
+	
+}
+.cart_topL2>p a{
+	text-decoration: underline;
+	color: #0066c0;
+}
+.cart_topL2>p a:hover{
+	color: #D58512;
+}
+.cart_shadow{
+    background:linear-gradient(to bottom,rgba(0,0,0,.14),rgba(0,0,0,.03) 3px,transparent);
+    height: 40px;
+    margin-top: 30px;
+}
+.bd{
+	background:linear-gradient(to right,#fff,rgba(255,255,255,0),#fff);
+	z-index: 1;
+	height: 40px;
+}
+
+.cart_views{
+	padding-right: 25px;
+	margin-bottom: 50px;
+}
+.cart_views>p:nth-of-type(2){
+	font-size: 15px;
+	
+}
+.cart_views .row{
+	width: 1200px;
+	margin: 0 auto;
+}
+.cart_views .row div{
+	width: 150px;
+	text-align: left;
+	margin-right: 50px;
+}
+.cart_views .row div img{
+	margin-bottom: 10px;
+}
+.cart_views .row div p{
+	line-height: 10px;
+}
+.cart_views .row div p a:hover{
+	color: #D58512;
+	text-decoration: none;
+}
+.cart_views .row div p:nth-of-type(3){
+	height: 12px;
+}
+.cart_views .row div p img{
+	vertical-align: middle;
+}
+.cart_price a{color: #D58512 !important;}
+.cart_view_bottom{
+	text-align: left;
+	padding: 20px 0px;
+}
+.cart_view_bottom span{
+	display: block;
+	width: 55px;
+	text-align: right;
+	margin-right: 20px;
+}
+.cart_view_bottom i img{
+	border: 1px #CCCCCC solid;
+	cursor: pointer;
+	margin-right: 20px;
+}
+.cart_view_bottom div{
+	width: 100px !important;
+	margin-right: 0px !important;
+	
+}
+.cart_view_bottom>div b{
+	margin-top: -5px;
+}
+.cart_view_bottom>div>a{
+	display: block;
+	width: 75px;
+	line-height: 12px !important;
+	font-size: 10px !important;
+	color: #0066c0;
+	margin-left:15px;
+}
+.cart_view_bottom a:hover{
+	color: #D58512 !important;
+	text-decoration: none !important;
+}

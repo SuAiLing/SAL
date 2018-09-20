@@ -1,0 +1,14 @@
+.register{
+	padding-top: 20px;
+}
+.register_content{
+	width: 350px;
+	margin: 0 auto;
+	border: 1px #CCCCCC solid;
+	border-radius: 5px;
+	padding: 22px 20px 22px 20px;
+}
+.register_content>p{
+	font-size: 28px;
+	color: black;
+}

@@ -3,9 +3,10 @@
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-		<title>公共页</title>
+		<title>首页</title>
 		<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css"/>
 		<link rel="stylesheet" type="text/css" href="css/Amazon.css"/>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
 		<script type="text/javascript" src="js/jquery.min.js" ></script>
 		<script type="text/javascript" src="bootstrap/js/bootstrap.min.js" ></script>
 		<script type="text/javascript" src="bootstrap/js/bootstrap-tooltip.js" ></script>
@@ -39,7 +40,7 @@
 							<span class="input-group-addon search_all">All<span class="caret"></span></span>
 							<input type="search" name="" id="" value="" class="form-control search_middle"/>
 							<span class="input-group-addon search_bg"><span class="glyphicon glyphicon-search"></span></span>
-							<div class="search_hide row pre-scrollable f14">
+							<div class="search_hide row pre-scrollable f14" style="z-index: 1;">
 								<ul class="list-group">
 									<li class="list-group-item">Alexa Skills</li>
 									<li class="list-group-item">All Departments</li>
@@ -84,7 +85,7 @@
 						    <li class="department fb" rel="popover" data-content="">
 						        <a href="#">Departments</a>
 						        <span class="caret"></span>
-						        <div class="department_hide f12">
+						        <div class="department_hide f12" style="z-index: 1;">
 									
 									<ul class="depart_list">
 										<div class="li_hide">
@@ -470,7 +471,7 @@
 									<img src="img/global1.png"/>
 									<span class="caret"></span>
 								</a>
-								<div class="EN_hide">
+								<div class="EN_hide" style="z-index: 1;">
 									<div class="EN_hide_primary">
 										<div class="radio">
 										    <label>
@@ -494,7 +495,7 @@
 									<b>Account & Lists</b>
 									<span class="caret"></span>
 								</a>
-								<div class="signIn_hide">
+								<div class="signIn_hide" style="z-index: 1;">
 									<div class="signIn_hide_primary">
 										<div class="signIn_primary_top">
 											<button class="btn btn-default">Sign in</button>
@@ -554,7 +555,7 @@
 							</li>
 							<li class="try_prime">
 								<a href="#"><b>Try Prime<span class="caret" style="color: #CCCCCC;"></span></b></a>
-								<div class="R_try_hide">
+								<div class="R_try_hide" style="z-index: 1;">
 									<div class="">
 										<div class="R_try_hide_content f16">
 											<img src="img/r_try.png" width="200px"/>
@@ -577,11 +578,299 @@
 				</div>
 			</div>
 		</header>
-		<div class="container departmrnt_content" style="text-align: center;margin-top: 20px;">
-			
+		<div class="index_content">
+			<!--首页轮播-->
+			<div id="myCarousel" class="carousel slide">				
+				<!-- 轮播（Carousel） -->
+				<div class="carousel-inner">
+					<div class="item active">
+						<img src="img/index_slide1.jpg" alt="First slide" height="300px">
+					</div>
+					<div class="item">
+						<img src="img/index_slide2.jpg" alt="Second slide" height="300px">					
+					</div>
+					<div class="item">
+						<img src="img/index_slide3.jpg" alt="Third slide" height="300px">
+					</div>
+					<div class="item">
+						<img src="img/index_slide4.jpg" alt="Fourth slide" height="300px">
+					</div>
+					<div class="item">
+						<img src="img/index_slide5.jpg" alt="Fifth slide" height="300px">
+					</div>
+				</div>
+				<!-- 轮播（Carousel）导航 -->
+				<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+				    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+				    <span class="sr-only">Previous</span>
+				</a>
+				<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+				    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+				    <span class="sr-only">Next</span>
+				</a>
+			</div> 
+			<!--首页第二部分-->
+			<div class="index_2">
+				<div class="row">
+					<div class="img-thumbnail pull-left">
+						<p><b>Back to School essentials</b></p>
+						<img src="img/index_1.jpg" class="img-responsive"/>
+						<div class="text-left">
+							<a href="#">Shop all</a>
+						</div>
+					</div>
+					<div class="img-thumbnail pull-left">
+						<p><b>Back to School essentials</b></p>
+						<img src="img/index_2.jpg" class="img-responsive"/>
+						<div class="text-left">
+							<a href="#">See more deals</a>
+						</div>
+					</div>
+					<div class="img-thumbnail pull-left">
+						<p><b>Back to School essentials</b></p>
+						<img src="img/index_3.jpg" class="img-responsive"/>
+						<div class="text-left">
+							<a href="#">Shop the latest styles</a>
+						</div>
+					</div>
+					<div class="img-thumbnail pull-left" style="margin-right: 0px;">
+						<p><b>Hurricane Florence Relief</b></p>
+						<div class="text-left">
+							<a href="#">Donate now</a>
+						</div>
+					</div>
+					
+					<div class="index_2_img pull-left text-center">
+						<img src="img/index_4.jpg"/>
+					</div>
+					
+				</div>
+				<a href="#" class="pull-right f12">Ad feedback <i><img src="img/index_msg1.png"/></i><i style="display: none;"><img src="img/index_msg2.png"/></i></a>
+			</div>
+			<!--第三部分   点击切换-->
+			<div class="index_3">
+				<p class="index_public_p">
+					<b>Today's Deals</b>
+					<a href="#" class="f12"><b>See all deals</b></a>
+				</p>
+				<b class="slide_l"><img src="img/b_left.png"/></b>
+				<b class="slide_r"><img src="img/b_right.png"/></b>
+				<div class="slideLR clearfix row">
+					<!--第一页-->
+					<ul class="list-unstyled pull-left">
+						<li class="pull-left">
+							<img src="img/index_LR1.jpg"/>
+							<p class="f16 fb">$11.92 - $13.00</p>
+						</li>
+						<li class="pull-left">
+							<img src="img/index_LR2.jpg"/>
+							<p class="f16 fb">$11.92 - $13.00</p>
+							<del class="f12 fb">$7.01</del>
+						</li>
+						<li class="pull-left">
+							<img src="img/index_LR3.jpg"/>
+							<p class="f16 fb">$11.92 - $13.00</p>
+							<del class="f12 fb">$7.01</del>
+						</li>
+						<li class="pull-left">
+							<img src="img/index_LR4.jpg"/>
+							<p class="f16 fb">$11.92 - $13.00</p>
+							<del class="f12 fb">$7.01</del>
+						</li>
+						<li class="pull-left">
+							<img src="img/index_LR5.jpg"/>
+							<p class="f16 fb">$11.92 - $13.00</p>
+							<del class="f12 fb">$7.01</del>
+						</li>
+						<li class="pull-left">
+							<img src="img/index_LR6.jpg"/>
+							<p class="f16 fb">$11.92 - $13.00</p>
+							<del class="f12 fb">$7.01</del>
+						</li>
+					</ul>
+					<ul class="list-unstyled pull-left">
+						<li class="pull-left">
+							<img src="img/index_LR1.jpg"/>
+							<p class="f16 fb">$11.92 - $13.00</p>
+						</li>
+						<li class="pull-left">
+							<img src="img/index_LR2.jpg"/>
+							<p class="f16 fb">$11.92 - $13.00</p>
+							<del class="f12 fb">$7.01</del>
+						</li>
+						<li class="pull-left">
+							<img src="img/index_LR3.jpg"/>
+							<p class="f16 fb">$11.92 - $13.00</p>
+							<del class="f12 fb">$7.01</del>
+						</li>
+						<li class="pull-left">
+							<img src="img/index_LR4.jpg"/>
+							<p class="f16 fb">$11.92 - $13.00</p>
+							<del class="f12 fb">$7.01</del>
+						</li>
+						<li class="pull-left">
+							<img src="img/index_LR5.jpg"/>
+							<p class="f16 fb">$11.92 - $13.00</p>
+							<del class="f12 fb">$7.01</del>
+						</li>
+						<li class="pull-left">
+							<img src="img/index_LR6.jpg"/>
+							<p class="f16 fb">$11.92 - $13.00</p>
+							<del class="f12 fb">$7.01</del>
+						</li>
+					</ul>
+					<ul class="list-unstyled pull-left">
+						<li class="pull-left">
+							<img src="img/index_LR1.jpg"/>
+							<p class="f16 fb">$11.92 - $13.00</p>
+						</li>
+						<li class="pull-left">
+							<img src="img/index_LR2.jpg"/>
+							<p class="f16 fb">$11.92 - $13.00</p>
+							<del class="f12 fb">$7.01</del>
+						</li>
+						<li class="pull-left">
+							<img src="img/index_LR3.jpg"/>
+							<p class="f16 fb">$11.92 - $13.00</p>
+							<del class="f12 fb">$7.01</del>
+						</li>
+						<li class="pull-left">
+							<img src="img/index_LR4.jpg"/>
+							<p class="f16 fb">$11.92 - $13.00</p>
+							<del class="f12 fb">$7.01</del>
+						</li>
+						<li class="pull-left">
+							<img src="img/index_LR5.jpg"/>
+							<p class="f16 fb">$11.92 - $13.00</p>
+							<del class="f12 fb">$7.01</del>
+						</li>
+						<li class="pull-left">
+							<img src="img/index_LR6.jpg"/>
+							<p class="f16 fb">$11.92 - $13.00</p>
+							<del class="f12 fb">$7.01</del>
+						</li>
+					</ul>
+				</div>
+				
+			</div>
+			<div class="">
+				这里也是左右切换
+			</div>
+			<div class="index_4 clearfix">
+				<ul class="list-unstyled text-center">
+					<li class="pull-left col-lg-6 col-md-6 col-sm-6 col-xs-6">
+						<img src="img/index_5.jpg"/>
+					</li>
+					
+					<li class="pull-left col-lg-6 col-md-6 col-sm-6 col-xs-6">
+						<img src="img/index_6.jpg"/>
+					</li>
+				</ul>
+			</div>
+			<div class="">
+				这里也是左右切换
+			</div>
+			<div class="index_5 clearfix">
+				<div class="index_5_l pull-left">
+					<p><b>Today's Deals Live</b></p>
+					<div class="">
+						<img src="img/index_video.jpg"/>
+					</div>
+				</div>
+				<div class="index_5_r pull-left">
+					<b class="index5_r_l"><img src="img/b_left.png"/></b>
+					<b class="index5_r_r"><img src="img/b_right.png"/></b>
+					<div class="f12">
+						<div class="pull-left">
+							<img src="img/index5_1.jpg" class=""/>
+							<p><a href="#">Fear: Trump in the White House</a></p>
+							<p><a href="#"><img src="img/star.png"/> 464</a></p>
+							<p class="cart_price"><a href="#">$15.99</a></p>
+							<button class="btn btn-default fb f12">Add to Cart</button>
+						</div>
+						<div class="pull-left">
+							<img src="img/index5_2.jpg" class=""/>
+							<p><a href="#">Fear: Trump in the White House</a></p>
+							<p class=""><a href="#"><img src="img/star.png"/> 464</a></p>
+							<p class="cart_price"><a href="#">$15.99</a></p>
+							<button class="btn btn-default fb f12">Add to Cart</button>
+						</div>
+						<div class="pull-left">
+							<img src="img/index5_3.jpg" class="img-responsive"/>
+							<p><a href="#">Fear: Trump in the White House</a></p>
+							<p class=""><a href="#"><img src="img/star.png"/> 464</a></p>
+							<p class="cart_price"><a href="#">$15.99</a></p>
+							<button class="btn btn-default fb f12">Add to Cart</button>
+						</div>
+						<div class="pull-left">
+							<img src="img/index5_4.jpg" class="img-responsive"/>
+							<p><a href="#">Fear: Trump in the White House</a></p>
+							<p class=""><a href="#"><img src="img/star.png"/> 464</a></p>
+							<p class="cart_price"><a href="#">$15.99</a></p>
+							<button class="btn btn-default fb f12">Add to Cart</button>
+						</div>
+						<div class="pull-left">
+							<img src="img/index5_5.jpg" class="img-responsive"/>
+							<p><a href="#">Fear: Trump in the White House</a></p>
+							<p class=""><a href="#"><img src="img/star.png"/> 464</a></p>
+							<p class="cart_price"><a href="#">$15.99</a></p>
+							<button class="btn btn-default fb f12">Add to Cart</button>
+						</div>
+						<div class="pull-left">
+							<img src="img/index5_6.jpg" class="img-responsive"/>
+							<p><a href="#">Fear: Trump in the White House</a></p>
+							<p class=""><a href="#"><img src="img/star.png"/> 464</a></p>
+							<p class="cart_price"><a href="#">$15.99</a></p>
+							<button class="btn btn-default fb f12">Add to Cart</button>
+						</div>
+						<div class="pull-left">
+							<img src="img/index5_1.jpg" class="img-responsive" />
+							<p><a href="#">Fear: Trump in the White House</a></p>
+							<p class=""><a href="#"><img src="img/star.png"/> 464</a></p>
+							<p class="cart_price"><a href="#">$15.99</a></p>
+							<button class="btn btn-default fb f12">Add to Cart</button>
+						</div>
+					</div>
+				</div>
+
+			</div>
+			<div class="">
+				这里也是左右切换
+			</div>
+			<div class="index_6 text-center">
+				<img src="img/index_big.jpg" width="1110px"/>
+			</div>
+			<div class="index_4 clearfix">
+				<ul class="list-unstyled text-center">
+					<li class="pull-left col-lg-6 col-md-6 col-sm-6 col-xs-6">
+						<img src="img/index_7.jpg"/>
+					</li>
+					
+					<li class="pull-left col-lg-6 col-md-6 col-sm-6 col-xs-6">
+						<img src="img/index_8.jpg"/>
+					</li>
+				</ul>
+			</div>
+			<div class="">
+				这里也是左右切换
+			</div>
+			<div class="">
+				这里也是左右切换
+			</div>
+			<div class="index_4 clearfix">
+				<ul class="list-unstyled text-center">
+					<li class="pull-left col-lg-6 col-md-6 col-sm-6 col-xs-6">
+						<img src="img/index_5.jpg"/>
+					</li>
+					
+					<li class="pull-left col-lg-6 col-md-6 col-sm-6 col-xs-6">
+						<img src="img/index_6.jpg"/>
+					</li>
+				</ul>
+			</div>
 		</div>
 		<footer>
-			<div class="footer_signiIn">
+			<div class="footer_signiIn" style="margin: 0px;">
 				<p><b>Your recently viewed items and featured recommendations</b></p>
 				<span class="f12">See personalized recommendations</span>
 				<div class="f12">

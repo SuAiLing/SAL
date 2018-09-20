@@ -61,4 +61,38 @@ $(function(){
 	},function(){
 		$(this).find(".R_try_hide").hide();
 	})
+	
+	
+	
+	//首页feedback
+	$(".index_2>a").hover(function(){
+		$(this).find("i").toggle();
+	},function(){
+		$(this).find("i").toggle();
+	})
+	
+	//左右切换
+	$(".index_3").mouseover(function(){
+		$(".index_3>b").show();
+	}).mouseout(function(){
+		$(".index_3>b").hide();
+	});
+	$(".slide_l").click(function(){
+		var $a=parseInt($(".slideLR").css("marginLeft"));
+//		alert($a)
+		if($a==0){
+			return false;
+		}else{
+			$(".slideLR").animate({marginLeft:$a+1200+"px"},1000);
+		}
+	});
+	$(".slide_r").click(function(){
+		var $a=parseInt($(".slideLR").css("marginLeft"));
+//		alert($a)
+		if($a==-2400){
+
+		}else{
+			$(".slideLR").animate({marginLeft:$a-1200+"px"},1000);
+		}
+	})
 })

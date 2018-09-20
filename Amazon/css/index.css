@@ -1,0 +1,128 @@
+body>div{
+	background-color: #eaeded;
+}
+.index_2{
+	padding: 20px 30px;
+}
+.index_2 .row .img-thumbnail{
+	width: 315px;
+	padding: 27px 27px;
+	margin-right: 14px;
+}
+.index_2 .row .img-thumbnail>p{
+	font-size: 20px;
+}
+.index_2 .row .img-thumbnail>div a{
+	display: block;
+	margin-top: 50px;
+}
+.index_2 .row .img-thumbnail>div a:hover{
+	color: #D58512;
+}
+.index_2_img{
+	margin-top: 15px;
+	width: 315px;
+	background-color: white;
+}
+.index_2>a:hover{
+	color: #E68405;
+}
+
+.index_3{
+	width: 1305px;
+	margin: 0px auto;
+	/*margin-bottom: 20px;*/
+	padding: 20px 20px;
+	background-color: white;
+	position: relative;
+	overflow: hidden;
+}
+.index_3>b{	position: absolute;cursor: pointer;}
+.slide_l{
+	top: 40%;
+}
+.slide_r{
+	top: 40%;
+	right: 10px;
+}
+.index_public_p{
+	
+	font-size: 20px;
+}
+.index_public_p>a{
+	margin-left: 5px;
+}
+.slideLR{
+	width: 4200px;
+}
+.slideLR>ul li{
+	padding-right: 20px;
+	min-width: 190px;
+	/*text-align: center;*/
+}
+.slideLR>ul li img{cursor: pointer;}
+.slideLR>ul li>del{
+	color: #767676;
+}
+.index_4{
+	width: 1300px;
+	margin: 0 auto;
+	background-color: white;
+	padding: 20px 0px;
+}
+.index_4>ul li:first-child{
+	border-right: 1px #e7e7e7 solid;
+}
+.index_5{
+	width: 1300px;
+	margin: 0 auto;
+	background-color: white;
+	padding: 30px 20px;
+}
+.index_5_l>p{
+	font-size: 20px;
+	color: #444444;
+}
+.index_5_r{
+	position: relative;
+	width: 850px;
+	overflow: hidden;
+}
+.index_5_r>b{
+	position: absolute;
+	top: 38%;
+	cursor: pointer;
+}
+.index5_r_r{right: 0px;}
+.index_5_r>div{
+	width: 1350px;
+	padding-top: 10px;
+}
+.index_5_r>div>div{
+	width: 180px;
+	margin-right: 10px;
+	padding: 15px;
+}
+.index_5_r>div>div:first-of-type{
+	
+	border: 2px solid #ff8f00;
+}
+.index_5_r>div>div button{
+	width: 150px;
+	height: 30px;
+	color: #584d31;
+	background-color: #f3ce74;
+	border: 1px #a88734 solid;
+}
+.index_5_r>div>div button:hover{
+	background-color: #eebd40;
+}
+.index_5_r>div>div a:hover{color: #E47923;}
+
+.index_6{
+	width: 1300px;
+	margin: 0 auto;
+	background-color: white;
+	padding: 20px 0px 40px 0px;
+	margin-bottom: 20px;
+}
