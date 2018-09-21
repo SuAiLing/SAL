@@ -3,9 +3,10 @@
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-		<title>公共页</title>
+		<title>详情页</title>
 		<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css"/>
 		<link rel="stylesheet" type="text/css" href="css/Amazon.css"/>
+		<link rel="stylesheet" type="text/css" href="css/detail.css"/>
 		<script type="text/javascript" src="js/jquery.min.js" ></script>
 		<script type="text/javascript" src="bootstrap/js/bootstrap.min.js" ></script>
 		<script type="text/javascript" src="bootstrap/js/bootstrap-tooltip.js" ></script>
@@ -577,8 +578,161 @@
 				</div>
 			</div>
 		</header>
-		<div class="container departmrnt_content" style="text-align: center;margin-top: 20px;">
-			
+		<div class="" style="">
+			<!--正文顶部选项-->
+			<div class="detail_top ">
+				<ul class="list-unstyled">
+					<li class="pull-left">
+						<a href="#"><b>Grocery</b></a>
+					</li>
+					<li class="pull-left">
+						<a href="#">Deals</a>
+					</li>
+					<li class="pull-left">
+						<a href="#">Snacks<span class="caret"></span></a>
+					</li>
+					<li class="pull-left">
+						<a href="#">Breakfast<span class="caret"></span></a>
+					</li>
+					<li class="pull-left">
+						<a href="#">Warm Beverages</a>
+					</li>
+					<li class="pull-left">
+						<a href="#">Cold Beverages</a>
+					</li>
+					<li class="pull-left">
+						<a href="#">Cooking Staples<span class="caret"></span></a>
+					</li>
+					<li class="pull-left">
+						<a href="#">Baby Food<span class="caret"></span></a>
+					</li>
+					<li class="pull-left">
+						<a href="#">Candy & Chocolate<span class="caret"></span></a>
+					</li>
+					<li class="pull-left">
+						<a href="#">Prime Pantry<span class="caret"></span></a>
+					</li>
+					<li class="pull-left">
+						<a href="#">Subscribe & Save</a>
+					</li>
+					<li class="pull-left">
+						<a href="#">International Foods</a>
+					</li>
+				</ul>
+			</div>
+			<div class="detail_top_img text-center">
+				<a href="#">
+					<img src="img/detail1.png"/>
+				</a>
+			</div>
+			<p><span> ‹ </span> <a href="#">Back to results</a></p>
+			<!--主要内容这里开始！！！！！！！！！！！！！-->
+			<div class="detail_content">
+				<!--第一部分主图版-->
+				<div class="content1 clearfix">
+					<!--左边-->
+					<div class="content1_L col-lg-8 col-md-8">
+						<p>
+							<b>Starbucks Decaf Pike Place Roast, Ground, 12 oz. Bag (Pack of 3) (Pack of 3)</b>
+							<span>by</span>
+							<a href="#">Starbucks</a>
+						</p>
+						<!--主图上面-->
+						<div class="zt_last f12">
+							<img src="img/star.png"/><span class="caret"></span>
+							<a href="#" class="fb">
+								9 customer reviews
+							</a>
+							<span class="f12"><font>Amazon's</font> <span class=""> Choice</span></span><s class="detail_triangle"></s>
+							<font>
+								for "<a href="#" class="fb">starbucks decaf ground coffee</a>"
+							</font>
+						</div>
+						<!--主图-->
+						<div class="zt">
+							这里是主图
+						</div>
+						<!--主图后面-->
+						<div class="zt_next">
+							<ul>
+								<p>About the product</p>
+								<li>Decaffeinated Ground Coffee</li>
+								<li>100% Arabica Coffee</li>
+								<li>Medium Roast</li>
+								<li>12 oz. resealable bag</li>
+							</ul>
+						</div>
+						<div class="pull-right msg_feedback">
+							<a href="#" class="f12">Report incorrect product information <i><img src="img/index_msg1.png"/></i><i style="display: none;"><img src="img/index_msg2.png"/></i></a>							
+						</div>
+					</div>
+					<!--右边-->
+					<div class="content1_R col-lg-4 col-md-4">
+						<div class="contentR_price">
+							<p>
+								<span class="normal">Price:</span>
+								<font class="fbrown fbrown_big">$33.95</font>
+								<font class="fbrown fbrown_small">($11.32 / Item) </font>
+							</p>
+							<p>
+								<span class="fbrown f16">Only 3 left in stock - order soon. </span>
+								<span class="normal msg_feedback">
+									Sold by <a href="#">Main Street Bargains</a> and <a href="#">Fulfilled by Amazon</a>. Gift-wrap available.
+								</span>
+							</p>
+						</div>
+						<div class="contentR_price_next normal msg_feedback">
+							This item does not ship to <b class="fblack">China</b>. Please check other sellers who may ship internationally. <a href="#">Learn more</a>
+						</div>
+						<div class="detail_count f12">
+							<p class="msg_feedback">
+								<img src="img/positiongrey.png"/>
+								<a href="#"> Deliver to China</a>
+							</p>
+							<div class="msg_feedback">
+								<span class="normal">Qty:</span>
+								<select name="">
+									<option value="">1</option>
+									<option value="">2</option>
+									<option value="">3</option>
+								</select>
+								<a href="#" class="pull-right">Turn on 1-click ordering</a>
+							</div>							
+							<button>
+								<i>
+									<img src="img/detail_cart.png" width="26px" height="26px"/>
+								</i>
+								<span>Add to Cart</span>
+							</button>
+							<button>Add to List</button>
+						</div>
+						<!--其他卖家同款商品-->
+						<div class="other_sellers">
+							<p>
+								<span class="fb f12">Other Sellers on Amazon</span>
+								<span class="pull-right">
+									<a href="#">10 new</a>
+									<span class="fb f12">from</span>
+									<span class="fbrown fbrown_small fb f12">$34.95</span>
+								</span>
+							</p>
+							<ul class="list-unstyled">
+								<li>
+									<p>
+										<span class="fbrown f16 fb">$27.30</span>
+										<span class="fbrown fbrown_small">($9.10 / Item) </span>
+										<button class="f12 pull-right">Add to Cart</button>
+									</p>
+									<div class="f12">
+										<span class="normal">Sold by:</span>
+										<a href="#">BulldogAuction</a>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
 		<footer>
 			<div class="footer_signiIn">

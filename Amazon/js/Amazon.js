@@ -42,6 +42,18 @@ $(function(){
 		$(this).find(".depart_li_hide").hide();
 	})
 	
+	
+	$(".EN_hide_primary").mouseleave(function(){
+		$(this).parent().hide();
+	})
+	$(".signIn_hide_primary").mouseleave(function(){
+		$(this).parent().hide();
+	})
+	
+	$(".R_try_hide_content").mouseleave(function(){
+		$(this).parent().parent().hide();
+	})
+	
 	//语言切换
 	$(".global").hover(function(){
 		$(this).find(".EN_hide").show();
@@ -61,7 +73,7 @@ $(function(){
 	},function(){
 		$(this).find(".R_try_hide").hide();
 	})
-	
+	//
 	
 	
 	//首页feedback
@@ -70,6 +82,14 @@ $(function(){
 	},function(){
 		$(this).find("i").toggle();
 	})
+	
+	//各种feedback
+	$(".msg_feedback>a").hover(function(){
+		$(this).find("i").toggle();
+	},function(){
+		$(this).find("i").toggle();
+	})
+	
 	
 	//左右切换
 	$(".index_scroll").mouseover(function(){
@@ -138,4 +158,6 @@ $(function(){
 	}).blur(function(){
 		$(this).css({"border":" 1px #949494 solid","box-shadow": "0px 0px 5px transparent"})	
 	})
+	
+	
 })

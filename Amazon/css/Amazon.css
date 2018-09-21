@@ -11,9 +11,7 @@ body{
 .f16{font-size: 16px;}
 .fb{font-weight: bold;}
 .clear{clear: both;}
-ul li{
-	list-style: none;
-}
+
 @media screen and (max-width: 1300px) {
 	.header_second{
 		width: 1300px;
