@@ -154,10 +154,17 @@ $(function(){
 	//点击框
 	$(".register_content>ul input").click(function(){
 		$(this).css({"border":" 1px #e77600 solid","box-shadow": "0px 0px 5px #e77600"});
-//		$(this).addClass("reg_input_chg");
 	}).blur(function(){
 		$(this).css({"border":" 1px #949494 solid","box-shadow": "0px 0px 5px transparent"})	
 	})
-	
-	
+	//详情页
+	$(".input_chg").click(function(){
+		$(this).css({"border":" 1px #e77600 solid","box-shadow": "0px 0px 5px #e77600"});
+	}).blur(function(){
+		$(this).css({"border":" 1px #949494 solid","box-shadow": "0px 0px 5px transparent"})	
+	})
 })
+
+
+
+
