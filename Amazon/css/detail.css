@@ -310,3 +310,146 @@
 	padding: 0px;
 	margin-left: 20px;
 }
+.ques_ans{
+	border-bottom: 1px #CCCCCC solid;
+	border-top: 1px #CCCCCC solid;
+	padding: 20px 20px;
+	
+}
+.ques_ans>div>input{
+	width: 1000px;
+	padding-left: 25px;
+	background: url(../img/input_search.png) no-repeat 8px 10px;
+	
+}
+.ques_ans1>ul:first-of-type{
+	width: 60px;
+	border-right: 1px #CCCCCC solid;
+}
+.ques_ans1>ul:nth-of-type(2){
+	width: 100px;
+	padding-left: 10px;
+}
+.ques_ans1>ul:last-of-type>li a{font-size: 14px;}
+.ques_ans1>ul:last-of-type>li:last-of-type a{
+	margin-left: 100px;
+	padding-left: 15px;
+	background: url(../img/detail_down2.png)no-repeat 0px 5px;
+}
+/*顾客评价*/
+.detail_reviews{
+	padding:20px;
+}
+/*左边*/
+.detail_reviewsL>p:nth-of-type(2){
+	height: 30px;
+	line-height: 30px;
+	
+}
+.detail_reviewsL>p:nth-of-type(2) img{
+	vertical-align: middle;
+}
+.detail_reviewsL .progress{
+	width: 95px;
+	margin: 0px 10px 0px 10px;
+	border: 1px #999999 solid;
+}
+
+.detail_reviewsL>div:nth-of-type(2){
+	margin-left: 50px;
+}
+.detail_reviewsL>div:nth-of-type(2)>button{
+	width: 165px;
+	height: 30px;
+}
+/*热门评价*/
+.Top_reviews{
+	margin-top: 20px;
+}
+.Top_reviews_content{
+	margin: 15px 0px;
+}
+.Top_reviews_content>p:first-of-type a{
+	/*color: #666666;*/
+	text-decoration: none;
+}
+.Top_reviews_content>p:first-of-type a:hover{color: black;}
+.Top_reviews_content>p>span:first-of-type{
+	padding-right: 8px;
+	border-right: 1px #CCCCCC solid;
+}
+.Top_reviews_content>p:last-of-type>button{
+	width: 94px;
+	margin-right: 5px;
+}
+.Top_reviews_content>p:last-of-type>a{
+	padding:0px 10px 0px 10px;
+	border-left: 1px #CCCCCC solid;
+	text-decoration: none;
+}
+
+
+
+/*评价右边*/
+.detail_reviewsR{
+	width: 420px;
+}
+.detail_reviewsR>div{
+	width: 300px;
+}
+.Top_reviews_content>a:hover{
+	text-decoration: none;
+	color: #666666;
+}
+.detail_reviewsR_input>input{
+	width: 175px;
+	height: 30px;
+	padding-left: 30px;
+	background: url(../img/input_search.png) no-repeat 10px 8px;
+}
+.detail_reviewsR_input>button{
+	height: 30px;
+	margin-left: 15px;
+	background: linear-gradient(to bottom,#72787F,#444C55);
+	border: 1px #3d444c solid;
+	border-radius: 3px;
+	width: 65px;
+	color: white;
+}
+/*到底啦hhhhhhhhhhhhhhhhhhhhhhhhhhh*/
+.Amazon_Giveaway{
+	padding: 0px 20px;
+}
+.Amazon_Giveaway>div>p{
+	width: 650px;
+	margin-top: 10px;
+}
+.Amazon_Giveaway>div>p>button{
+	height: 30px;
+	width: 128px;
+}
+.bottompic_next{
+	padding: 20px 20px;
+}
+.bottompic_next>div{
+	padding: 15px;
+	border: 1px #CCCCCC solid;
+}
+
+
+/*主图*/
+
+.zt{
+	margin-top: 20px;
+}
+.zt_mid{
+	padding-bottom: 50px;
+	position: relative;
+	float: left;
+}
+.zt_small{
+	margin-right: 20px;
+}
+.zt_small>li{
+	line-height: 60px;
+}

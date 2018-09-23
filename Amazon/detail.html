@@ -7,11 +7,13 @@
 		<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css"/>
 		<link rel="stylesheet" type="text/css" href="css/Amazon.css"/>
 		<link rel="stylesheet" type="text/css" href="css/detail.css"/>
+		<link rel="stylesheet" type="text/css" href="css/fdj.css"/>
 		<script type="text/javascript" src="js/jquery.min.js" ></script>
 		<script type="text/javascript" src="bootstrap/js/bootstrap.min.js" ></script>
 		<script type="text/javascript" src="bootstrap/js/bootstrap-tooltip.js" ></script>
 		<script type="text/javascript" src="bootstrap/js/bootstrap-popover.js" ></script>
 		<script type="text/javascript" src="js/Amazon.js" ></script>
+		<script type="text/javascript" src="js/index.js" ></script>
 	</head>
 	<body>
 		<header id="#top">
@@ -649,9 +651,26 @@
 							</font>
 						</div>
 						<!--主图-->
-						<div class="zt">
-							这里是主图
+						<div class="zt clearfix">
+							<div class="wai clearfix">
+								<ul class="two zt_small" style="float: left;list-style: none;">
+									<li><img class="active" src="img/7.jpg" /></li>
+									<li><img src="img/6.jpg" /></li>
+									<li><img src="img/5.jpg" />	</li>		
+								</ul>
+								<div class="zt_mid">
+									<div class="one text-center" style="float: left;">
+										<img src="img/77.jpg" />
+										<span></span>
+									</div>
+								</div>
+								
+							</div>
+							<div class="the">
+								<img src="img/777.jpg" />
+							</div>
 						</div>
+						
 						<!--主图后面-->
 						<div class="zt_next">
 							<ul>
@@ -952,13 +971,356 @@
 				<div class="">
 					依旧是不想做的那个块
 				</div>
-				<div class="">
-					
+				<div class="text-center">
+					<div class="" style="width: 1110px;margin: 20px auto;">
+						<img src="img/index_big.jpg" width="1110px"/>
+						<p class="msg_feedback pull-right">
+							<a href="#" class="f12">Ad feedback <i><img src="img/index_msg1.png"/></i><i style="display: none;"><img src="img/index_msg2.png"/></i></a>														
+						</p>
+					</div>
+				</div>
+				<!--顾客问答-->
+				<div class="ques_ans clearfix">
+					<p class="cont_topic">Customer questions & answers</p>
+					<div class="form-group">
+						<input type="text" name="" id="" placeholder="have a question?" value=""  class="form-control input_chg"/>
+					</div>
+					<div class="ques_ans_content clearfix">
+						<div class="ques_ans1 clearfix">
+							<ul class="list-unstyled text-center pull-left">
+								<li><img src="img/detail_top.png"/></li>
+								<li>0 <br />votes</li>
+								<li><img src="img/detail_down.png"/></li>
+							</ul>
+							<ul class="list-unstyled pull-left">
+								<li>
+									<p><b>Question:</b></p>
+								</li>
+								<li>
+									<p><b>Answer:</b></p>
+								</li>
+							</ul>
+							<ul class="list-unstyled f14">
+								<li>
+									<p class="msg_feedback"><a href="#">Is this coffee ground for a paper cone filter?</a></p>
+								</li>
+								<li class="fblack" style="padding-top: 2px;"><p>Yes it is. I use a filter machine </p></li>
+								<li class="normal">By John Stevens on August 3, 2015</li>
+								<li class="msg_feedback"><a href="#" class=""> See more answers (3)</a></li>
+							</ul>
+						</div>
+						<div class="ques_ans1 clearfix">
+							<ul class="list-unstyled text-center pull-left">
+								<li><img src="img/detail_top.png"/></li>
+								<li>0 <br />votes</li>
+								<li><img src="img/detail_down.png"/></li>
+							</ul>
+							<ul class="list-unstyled pull-left">
+								<li>
+									<p><b>Question:</b></p>
+								</li>
+								<li>
+									<p><b>Answer:</b></p>
+								</li>
+							</ul>
+							<ul class="list-unstyled f14">
+								<li>
+									<p class="msg_feedback"><a href="#">Is this coffee ground for a paper cone filter?</a></p>
+								</li>
+								<li class="fblack" style="padding-top: 2px;"><p>Yes it is. I use a filter machine </p></li>
+								<li class="normal">By John Stevens on August 3, 2015</li>
+								<li class="msg_feedback"><a href="#" class=""> See more answers (3)</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!--顾客评价-->
+				<div class="detail_reviews clearfix">
+					<div class="detail_reviewsL pull-left">
+						<p class="cont_topic">Customer questions & answers</p>
+						<p class="msg_feedback"><a href="#" class="f18"><img src="img/star1.png"/> 9</a></p>
+						<p class="msg_feedback"><a href="#">5.0 out of 5 stars<span class="caret"></span></a></p>
+						<div class="pull-left">
+							
+						
+							<div class="clearfix">
+								<ul class="list-unstyled pull-left">
+									<li class="msg_feedback"><a href="#">5 star</a></li>
+								</ul>
+								<div class="progress detail_reviews_bar pull-left">
+									<div class="progress-bar" role="progressbar" aria-valuenow="60"
+										 aria-valuemin="0" aria-valuemax="100" style="width: 75%;background-color: orange;">
+										<span class="sr-only"></span>
+									</div>
+								</div>
+								<ul class="list-unstyled pull-left">
+									<li class="msg_feedback"><a href="#">75%</a></li>
+								</ul>
+							</div>
+							<div class="clearfix">
+								<ul class="list-unstyled pull-left">
+									<li class="msg_feedback"><a href="#">4 star</a></li>
+								</ul>
+								<div class="progress detail_reviews_bar pull-left">
+									<div class="progress-bar" role="progressbar" aria-valuenow="60"
+										 aria-valuemin="0" aria-valuemax="100" style="width: 25%;background-color: orange;">
+										<span class="sr-only"></span>
+									</div>
+								</div>
+								<ul class="list-unstyled pull-left">
+									<li class="msg_feedback"><a href="#">25%</a></li>
+								</ul>
+							</div>
+							<div class="clearfix">
+								<ul class="list-unstyled pull-left">
+									<li class=""><a href="#" style="color: #767676;text-decoration: none;">3 star</a></li>
+								</ul>
+								<div class="progress detail_reviews_bar pull-left">
+									<div class="progress-bar" role="progressbar" aria-valuenow="60"
+										 aria-valuemin="0" aria-valuemax="100" style="width: 0%;background-color: orange;">
+										<span class="sr-only"></span>
+									</div>
+								</div>
+								<ul class="list-unstyled pull-left">
+									<li class=""><a href="#" style="color: #767676;text-decoration: none;">0%</a></li>
+								</ul>
+							</div>
+							<div class="clearfix">
+								<ul class="list-unstyled pull-left">
+									<li class=""><a href="#" style="color: #767676;text-decoration: none;">2 star</a></li>
+								</ul>
+								<div class="progress detail_reviews_bar pull-left">
+									<div class="progress-bar" role="progressbar" aria-valuenow="60"
+										 aria-valuemin="0" aria-valuemax="100" style="width: 0%;background-color: orange;">
+										<span class="sr-only"></span>
+									</div>
+								</div>
+								<ul class="list-unstyled pull-left">
+									<li class=""><a href="#" style="color: #767676;text-decoration: none;">0%</a></li>
+								</ul>
+							</div>
+							<div class="clearfix">
+								<ul class="list-unstyled pull-left">
+									<li class=""><a href="#" style="color: #767676;text-decoration: none;">1 star</a></li>
+								</ul>
+								<div class="progress detail_reviews_bar pull-left bar_0">
+									<div class="progress-bar" role="progressbar" aria-valuenow="60"
+										 aria-valuemin="0" aria-valuemax="100" style="width: 0%;background-color: orange;">
+										<span class="sr-only"></span>
+									</div>
+								</div>
+								<ul class="list-unstyled pull-left">
+									<li class=""><a href="#" style="color: #767676;text-decoration: none;">0%</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="pull-left">
+							<p class="normal fblack">Share your thoughts with other customers</p>
+							<button class="cont_buttonG f12">Write a customer review</button>
+						</div>
+						<div class="clearfix">
+							
+						</div>
+						<p class="msg_feedback clearfix">
+							<a href="#" class="f12">See all 9 customer reviews<span class="caret"></span></a>
+						</p>
+						<div class="Top_reviews f16">
+							<p class=""><b>Top customer reviews</b></p>
+							<div class="Top_reviews_content">
+								<p class="">
+									<img src="img/review_pic.png" width="33px"/>
+									<a href="#" class="f14 fblack">Jan from California</a>
+								</p>
+								<p class="msg_feedback">
+									<img src="img/star1.png"/>
+									<a href="#" class="fblack f14"><b> Wonderful coffee</b></a>
+								</p>
+								<p class="f12">September 21, 2017</p>
+								<p class="f12">
+									<span>Size: Pack of 3</span> &nbsp;
+									<span class="fbrown fbrown_small"><b>Verified Purchase</b></span>
+								</p>
+								<p class="normal fblack">Had this coffee at a party and thought it was delicious. Better than the brand I have been using.</p>
+								<p class="f12 msg_feedback">
+									<button class="cont_buttonG">Helpful</button>
+									<button class="cont_buttonG">Not Helpful</button>
+									<a href="#" class="normal">Comment</a>
+									<a href="#" class="normal">Report abuse</a>
+								</p>
+							</div>
+							<div class="Top_reviews_content">
+								<p class="">
+									<img src="img/review_pic.png" width="33px"/>
+									<a href="#" class="f14 fblack">Jan from California</a>
+								</p>
+								<p class="msg_feedback">
+									<img src="img/star1.png"/>
+									<a href="#" class="fblack f14"><b> Wonderful coffee</b></a>
+								</p>
+								<p class="f12">September 21, 2017</p>
+								<p class="f12">
+									<span>Size: Pack of 3</span> &nbsp;
+									<span class="fbrown fbrown_small"><b>Verified Purchase</b></span>
+								</p>
+								<p class="normal fblack">Had this coffee at a party and thought it was delicious. Better than the brand I have been using.</p>
+								<p class="f12 msg_feedback">
+									<button class="cont_buttonG">Helpful</button>
+									<button class="cont_buttonG">Not Helpful</button>
+									<a href="#" class="normal">Comment</a>
+									<a href="#" class="normal">Report abuse</a>
+								</p>
+							</div>
+							<div class="Top_reviews_content">
+								<p class="">
+									<img src="img/review_pic.png" width="33px"/>
+									<a href="#" class="f14 fblack">Jan from California</a>
+								</p>
+								<p class="msg_feedback">
+									<img src="img/star1.png"/>
+									<a href="#" class="fblack f14"><b> Wonderful coffee</b></a>
+								</p>
+								<p class="f12">September 21, 2017</p>
+								<p class="f12">
+									<span>Size: Pack of 3</span> &nbsp;
+									<span class="fbrown fbrown_small"><b>Verified Purchase</b></span>
+								</p>
+								<p class="normal fblack">Had this coffee at a party and thought it was delicious. Better than the brand I have been using.</p>
+								<p class="f12 msg_feedback">
+									<button class="cont_buttonG">Helpful</button>
+									<button class="cont_buttonG">Not Helpful</button>
+									<a href="#" class="normal">Comment</a>
+									<a href="#" class="normal">Report abuse</a>
+								</p>
+							</div>
+							<div class="Top_reviews_content">
+								<p class="">
+									<img src="img/review_pic.png" width="33px"/>
+									<a href="#" class="f14 fblack">Jan from California</a>
+								</p>
+								<p class="msg_feedback">
+									<img src="img/star1.png"/>
+									<a href="#" class="fblack f14"><b> Wonderful coffee</b></a>
+								</p>
+								<p class="f12">September 21, 2017</p>
+								<p class="f12">
+									<span>Size: Pack of 3</span> &nbsp;
+									<span class="fbrown fbrown_small"><b>Verified Purchase</b></span>
+								</p>
+								<p class="normal fblack">Had this coffee at a party and thought it was delicious. Better than the brand I have been using.</p>
+								<p class="f12 msg_feedback">
+									<button class="cont_buttonG">Helpful</button>
+									<button class="cont_buttonG">Not Helpful</button>
+									<a href="#" class="normal">Comment</a>
+									<a href="#" class="normal">Report abuse</a>
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="detail_reviewsR pull-right">
+						<div class="">
+							<a href="#"><img src="img/review_r.jpg"/></a>
+							<div class="pull-right msg_feedback">
+								<a href="#" class="f12">Ad feedback <i><img src="img/index_msg1.png"/></i><i style="display: none;"><img src="img/index_msg2.png"/></i></a>							
+							</div>
+						</div>
+						<div class="Top_reviews f16 clearfix">
+							<p class=""><b>Most recent customer reviews</b></p>
+							<div class="Top_reviews_content">
+								<p class="">
+									<img src="img/review_pic.png" width="33px"/>
+									<a href="#" class="f14 fblack">Jan from California</a>
+								</p>
+								<p class="msg_feedback">
+									<img src="img/star1.png"/>
+									<a href="#" class="fblack f14"><b> Five Stars</b></a>
+								</p>
+								<p class="f12">September 21, 2017</p>
+								<p class="f12">
+									<span>Size: Pack of 3</span> &nbsp;
+								</p>
+								<p class="normal fblack">Had this coffee at a party and thought it was delicious.</p>
+								<a href="#" class="normal fb">Published 1 year ago</a>
+							</div>
+							<div class="Top_reviews_content">
+								<p class="">
+									<img src="img/review_pic.png" width="33px"/>
+									<a href="#" class="f14 fblack">Jan from California</a>
+								</p>
+								<p class="msg_feedback">
+									<img src="img/star1.png"/>
+									<a href="#" class="fblack f14"><b> Five Stars</b></a>
+								</p>
+								<p class="f12">September 21, 2017</p>
+								<p class="f12">
+									<span>Size: Pack of 3</span> &nbsp;
+								</p>
+								<p class="normal fblack">Love it !</p>
+								<a href="#" class="normal fb">Published 1 year ago</a>
+							</div>
+							<div class="Top_reviews_content">
+								<p class="">
+									<img src="img/review_pic.png" width="33px"/>
+									<a href="#" class="f14 fblack">Jan from California</a>
+								</p>
+								<p class="msg_feedback">
+									<img src="img/star1.png"/>
+									<a href="#" class="fblack f14"><b> Five Stars</b></a>
+								</p>
+								<p class="f12">September 21, 2017</p>
+								<p class="f12">
+									<span>Size: Pack of 3</span> &nbsp;
+								</p>
+								<p class="normal fblack">Had this coffee at a party and thought it was delicious.</p>
+								<a href="#" class="normal fb">Published 1 year ago</a>
+							</div>
+							<p class="f14">
+								<b>Search customer reviews</b>
+							</p>
+							<div class="detail_reviewsR_input f12 fb">
+								<input type="text" name="username" id="username" class="form-control pull-left input_chg"/>
+								<button>Search</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--渐变、阴影-->
+				<div class="cart_shadow">
+					<div class="bd"></div>
+				</div>
+				<div class="Amazon_Giveaway clearfix">
+					<p class="cont_topic">Customer questions & answers</p>
+					<div class="clearfix">
+						<i class="pull-left"><img src="img/detail_1.jpg"/></i>
+						<p class="msg_feedback f14 pull-left">
+							<span>Amazon Giveaway allows you to run promotional giveaways in order to create buzz, reward your audience, and attract new followers and customers.</span>
+							<a href="#">Learn more about Amazon Giveaway</a>
+						</p>
+						<p class="msg_feedback f14 pull-left">
+							<b>This item:</b>
+							<span>Starbucks Decaf Pike Place Roast, Ground, 12 oz. Bag (Pack of 3) (Pack of 3)</span>
+						</p>
+						<p class="f12">
+							<button class="cont_buttonG">Set up a giveaway</button>
+						</p>
+					</div>
+				</div>
+				<div class="text-center">
+					<a href="#"><img src="img/detail_bottom.jpg"/></a>
+				</div>
+				<div class="bottompic_next">
+					<p>
+						<b>Pages with related products.</b>
+						<span>See and discover other items:<a href="#">decaf coffee</a>,<a href="#">starbuck's coffee</a><a href="#">coffees from around the world</a></span>
+					</p>
+					<div class="f12 text-center fblack">
+						<b>Disclaimer:</b>
+						<span>Disclaimer: While we work to ensure that product information is correct, on occasion manufacturers may alter their ingredient lists. Actual product packaging and materials may contain more and/or different information than that shown on our Web site. We recommend that you do not solely rely on the information presented and that you always read labels, warnings, and directions before using or consuming a product. For additional information about a product, please contact the manufacturer. Content on this site is for reference purposes and is not intended to substitute for advice given by a physician, pharmacist, or other licensed health-care professional. You should not use this information as self-diagnosis or for treating a health problem or disease. Contact your health-care provider immediately if you suspect that you have a medical problem. Information and statements regarding dietary supplements have not been evaluated by the Food and Drug Administration and are not intended to diagnose, treat, cure, or prevent any disease or health condition. Amazon.com assumes no liability for inaccuracies or misstatements about products.</span>
+					</div>
 				</div>
 			</div>
 		</div>
 		<footer>
-			<div class="footer_signiIn">
+			<div class="footer_signiIn" style="margin-top: 20px;">
 				<p><b>Your recently viewed items and featured recommendations</b></p>
 				<span class="f12">See personalized recommendations</span>
 				<div class="f12">

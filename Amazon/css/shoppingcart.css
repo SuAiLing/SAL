@@ -137,3 +137,145 @@
 .cart_views>.row{
 	
 }
+
+
+
+.fbrown{color: #B12704;}
+.fbrown_big{
+	font-size: 22px;
+}
+.fbrown_small{
+	font-size: 10px;
+}
+.normal{
+	font-size: 12px;
+	color: #555555;
+}
+.fblack{color: black;}
+.msg_feedback>a:hover{
+	color: #E47923;
+}
+.f18{font-size: 18px;}
+.cont_buttonY,.cont_buttonG{
+	width: 123px;
+	height: 22px;
+	margin: 8px 0px;
+	border-radius: 3px;
+}
+.cont_buttonY{
+	background: linear-gradient(to bottom,#f7dfa5,#f0c14b);
+	border: 1px #a88734 solid;
+	position: relative;
+}
+
+.cont_buttonG{
+	background: linear-gradient(to bottom,#f7f8fa,#e7e9ec);
+	border: 1px #adb1b8 solid;
+}
+/*购物车内容*/
+.cart_content{
+	border-top: 1px #CCCCCC solid;
+	border-bottom: 1px #CCCCCC solid;
+	padding: 15px 0px;
+}
+.cart_topL2>div:last-of-type{
+	margin-bottom: 20px;
+}
+.cart_content>div:nth-of-type(2){
+	width: 530px;
+}
+.cart_content>div:nth-of-type(2)>p{
+	line-height: 10px;
+}
+
+
+
+.index_5_r{
+	position: relative;
+	width: 850px;
+	overflow: hidden;
+	margin-left: 10px;
+}
+.index_5_r>b{
+	position: absolute;
+	top: 38%;
+	cursor: pointer;
+}
+.index5_r_r{right: 0px;}
+.index_5_r>div{
+	width: 1350px;
+	padding-top: 10px;
+}
+.index_5_r>div>div{
+	width: 180px;
+	margin-right: 10px;
+	padding: 15px;
+	border: 2px solid transparent;
+}
+.index_5_r>div>div:hover{border: 2px solid #ff8f00;}
+.index_5_r>div>div img{
+	cursor: pointer;
+	
+}
+.index_5_r>div>div button{
+	width: 150px;
+	height: 30px;
+	color: #584d31;
+	background-color: #f3ce74;
+	border: 1px #a88734 solid;
+}
+.index_5_r>div>div button:hover{
+	background-color: #eebd40;
+}
+.index_5_r>div>div a:hover{color: #E47923;}
+
+/*购物车右边*/
+.cart_topR{
+	width:300px
+}
+.cart_topR1{
+	/*border: 1px #CCCCCC solid;*/
+	/*padding: 20px;*/
+}
+.cart_topR1_white{
+	border: 1px #CCCCCC solid;
+	padding: 15px;
+}
+.cart_topR1_white>p{
+	color: #029802;
+	line-height: 5px;
+}
+.cart_topR1_grey{
+	padding: 10px;
+	border: 1px #CCCCCC solid;
+	background-color: #f3f3f3;
+}
+.cart_topR1_grey>p:nth-of-type(3)>button{
+	width: 260px;
+	height: 30px;
+}
+/*文字在线上*/
+.order {
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+}
+.order .line {
+    display: inline-block;
+    width: 125px;
+    border-top: 1px solid #ccc ;
+}
+.order .txt {
+    color: #686868;
+    vertical-align: -4px;
+    font-size: 12px;
+}
+
+.cart_topR2{
+	padding: 20px;
+	border: 1px #ccc solid; 
+	margin-top: 20px;
+}
+.cart_topR2>div>div{
+	margin-bottom: 10px;
+}
