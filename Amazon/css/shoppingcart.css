@@ -187,12 +187,17 @@
 .cart_content>div:nth-of-type(2)>p{
 	line-height: 10px;
 }
-
-
+.price>span:first-of-type{
+	display: inline-block;
+	width: 660px;
+}
+.cart_Quantity select{
+	width: 75px;
+}
 
 .index_5_r{
 	position: relative;
-	width: 850px;
+	width: 900px;
 	overflow: hidden;
 	margin-left: 10px;
 }
@@ -279,3 +284,24 @@
 .cart_topR2>div>div{
 	margin-bottom: 10px;
 }
+
+
+
+/*切换*/
+
+.public_click{
+	position: relative;
+}
+.public_click>b{
+	position: absolute;
+	top: 60px;
+	border: 1px #CCCCCC solid;
+	padding: 15px;
+	border-radius: 3px;
+	background-color: #f4f5f7;
+	cursor: pointer;
+}
+.r_left{
+	left: 0px;
+}
+.r_right{right: 0px;}

@@ -163,6 +163,20 @@ $(function(){
 	}).blur(function(){
 		$(this).css({"border":" 1px #949494 solid","box-shadow": "0px 0px 5px transparent"})	
 	})
+	
+	
+	//购物车
+	$(".r_left").click(function(){
+//		if($(this).parent().find(".viewed_list").css("display","none")){
+//			$(this).parent().find(".viewed_list").show();
+//		}else{
+//			$(this).parent().find(".viewed_list").hide();
+//		}
+		$(this).parent().find(".viewed_list").toggle();
+	})
+	$(".r_right").click(function(){
+		$(this).parent().find(".viewed_list").toggle();
+	})
 })
 
 

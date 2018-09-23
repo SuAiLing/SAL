@@ -221,8 +221,9 @@
 .content2{
 	border-top: 1px #CCCCCC solid;
 	border-bottom: 1px #CCCCCC solid;
-	margin: 0px 20px;
+	margin: 20px 20px;
 	padding: 10px 0px 30px 0px;
+	margin-top: 180px;
 }
 .cont_topic,.f20{
 	font-size: 20px;
@@ -452,4 +453,67 @@
 }
 .zt_small>li{
 	line-height: 60px;
+}
+
+
+
+.public_click{
+	position: relative;
+}
+.public_click>b{
+	position: absolute;
+	top: 60px;
+	border: 1px #CCCCCC solid;
+	padding: 15px;
+	border-radius: 3px;
+	background-color: #f4f5f7;
+	cursor: pointer;
+}
+.r_left{
+	left: 0px;
+}
+.r_right{right: 0px;}
+
+.cart_views{
+	padding-right: 25px;
+	margin-bottom: 50px;
+	/*width: 1200px;*/
+}
+.cart_views>div{
+	width: 1200px;
+	margin: 20px auto;
+	overflow: hidden;
+}
+.cart_views>div>p:first-of-type{
+	font-size: 20px;
+	color: #444444;
+}
+.cart_views>div>p:nth-of-type(2){
+	font-size: 13px;
+	color: #444444;
+}
+.cart_views .viewed_list{
+	width: 2400px;
+	
+}
+.cart_views .viewed_list div{
+	width: 150px;
+	text-align: left;
+	margin-right: 50px;
+}
+.cart_views .viewed_list div img{
+	margin-bottom: 10px;
+}
+.cart_views .viewed_list div p{
+	line-height: 10px;
+}
+.cart_views .viewed_list div p a:hover{
+	color: #D58512;
+	text-decoration: none;
+}
+.cart_views .viewed_list div p:nth-of-type(3){
+	height: 12px;
+}
+.cart_views .viewed_list div p img{
+	vertical-align: middle;
 }
