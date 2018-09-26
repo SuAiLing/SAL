@@ -177,6 +177,24 @@ $(function(){
 	$(".r_right").click(function(){
 		$(this).parent().find(".viewed_list").toggle();
 	})
+	//结算
+	
+	var $sum=0;
+	var $cart_sum=$(".cart_sum").text();
+	$(".count_select").change(function(){
+		var $count=$(this).find("option:selected").text();
+		$(".cart_count").text($count);
+		$(".head_count").text($count);
+//		alert($(this).find("option:selected").text());
+		$sum= $count*$cart_sum;
+//		alert($sum)
+		$(".cart_sum").text($sum.toFixed(2));
+		$(".cartR_sum").text($sum.toFixed(2));
+		$(".cartR_count").text($count);
+	})
+	$(".cart_del").click(function(){
+		
+	})
 })
 
 

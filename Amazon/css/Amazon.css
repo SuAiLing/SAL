@@ -80,7 +80,7 @@ body{
 	width: 660px;
 	text-align: left !important;
 	position: absolute;
-	z-index: 10;
+	z-index: 999;
 	left: 110%;
 	top: -120%;
 	padding: 0px 20px;
@@ -120,6 +120,7 @@ body{
 	display: none;
 	top: 33px;
 	left: 15px;
+	z-index: 999;
 }
 .search_hide ul li{
 	height: 18px;
@@ -191,6 +192,7 @@ body{
 .header_second1_r2{
 	padding-top: 15px;
 	margin-left: -50px;
+	list-style: none;
 }
 .header_second1_r2 li{
 	float: left;
@@ -225,6 +227,7 @@ body{
 	display: none;
 	left: 0px;
 	/*top: 0px;*/
+	z-index: 999;
 }
 .department_hide>ul{
 	position: absolute;
@@ -300,6 +303,7 @@ body{
 	left: 0px;
 	top: 140px;
 	display: none;
+	z-index: 999;
 }
 .EN_hide_primary{
 	position: absolute;

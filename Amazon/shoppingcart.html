@@ -23,7 +23,7 @@
 			<div class="header_second clearfix">
 				<div class="header_second_1">
 					<span class="pull-left col-lg-2 col-md-2 col-xs-2 col-sm-2">
-						<img src="img/amazon_logo.png"/>
+						<a href="index.html"><img src="img/amazon_logo.png"/></a>
 						<div class="try">
 							<a class=" f12 fb">Try Prime</a>
 							<div class="TryPrime_hide">
@@ -82,7 +82,7 @@
 					<div class="header_second_1_m pull-left">
 						<ul class="">
 						    <li class="department fb" rel="popover" data-content="">
-						        <a href="#">Departments</a>
+						        <a href="department.html">Departments</a>
 						        <span class="caret"></span>
 						        <div class="department_hide f12">
 									
@@ -485,7 +485,7 @@
 							</li>
 							<!--登录-->
 							<li class="sign_in">
-								<a href="#" class="f12">
+								<a href="login.html" class="f12">
 									Hello,Sign in<br />
 									<b>Account & Lists</b>
 									<span class="caret"></span>
@@ -565,7 +565,7 @@
 						</ul>
 						<div class="shop_cart pull-left fb">
 							<a href="#" class="pull-left">
-								<span>1</span>
+								<span class="head_count">1</span>
 							</a>
 							<a href="#" class="pull-left"><font>Cart</font></a>
 						</div>
@@ -611,26 +611,26 @@
 										<a href="#" class="f12">Learn more</a>
 									</p>
 									<p class="msg_feedback">
-										<a href="#" class="f12">Delete </a>
+										<a href="#" class="f12 cart_del">Delete </a>
 										<span style="color: #CCCCCC;"> | </span>
 										<a href="#" class="f12">Save for later</a>
 									</p>
 								</div>
-								<div class="fbrown f18 pull-left"><b>$33.90</b></div>
+								<div class="fbrown f18 pull-left"><b>$<span>33.90</span></b></div>
 								<div class="pull-right cart_Quantity">
 									<form role="form">
 										<div class="form-group">
-											<select class="form-control">
-												<option>1</option>
-												<option>2</option>
-												<option>3</option>
-												<option>4</option>
-												<option>5</option>
-												<option>6</option>
-												<option>7</option>
-												<option>8</option>
-												<option>9</option>
-												<option>10</option>
+											<select class="form-control count_select">
+												<option value="1">1</option>
+												<option value="2">2</option>
+												<option value="3">3</option>
+												<option value="4">4</option>
+												<option value="5">5</option>
+												<option value="6">6</option>
+												<option value="7">7</option>
+												<option value="8">8</option>
+												<option value="9">9</option>
+												<option value="10">10</option>
 											</select>
 											
 										</div>
@@ -638,8 +638,8 @@
 								</div>
 							</div>
 							<p class="pull-right">
-								<b class="f18">Subtotal (1 item): </b>
-								<b class="f18 fbrown">$33.90</b>
+								<b class="f18">Subtotal (<span class="cart_count">1</span> item): </b>
+								<b class="f18 fbrown">$<span class="cart_sum">33.90</span></b>
 							</p>
 						</div>
 						<!--<p>Your Shopping Cart lives to serve. Give it purpose — fill it with books, CDs, DVDs, toys, electronics, and more. </p>
@@ -723,8 +723,8 @@
 						</div>
 						<div class="cart_topR1_grey">
 							<p class="">
-								<b class="f18">Subtotal (1 item): </b>
-								<b class="f18 fbrown">$33.90</b>
+								<b class="f18">Subtotal (<span class="cartR_count">1</span> item): </b>
+								<b class="f18 fbrown">$<span class="cartR_sum">33.90</span></b>
 							</p>
 							<p>
 								<input type="checkbox" name="" id="" value="" />
