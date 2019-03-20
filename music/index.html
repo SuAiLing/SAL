@@ -4,9 +4,11 @@
 		<meta charset="utf-8" />
 		<title>首页</title>
 		<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css"/>
+
 		<link rel="stylesheet" type="text/css" href="css/index.css"/>
 		<script type="text/javascript" src="js/jquery.min.js" ></script>
 		<script type="text/javascript" src="bootstrap/js/bootstrap.js" ></script>
+		<script type="text/javascript" src="js/index.js" ></script>
 	</head>
 	<body>
 		<!--顶部导航-->
@@ -45,63 +47,325 @@
 		</div>
 		<!--正文-->
 		<!--歌单推荐-->
-		<div class="commend clearfix">
+		<div class="commend common_part clearfix">
 			<h2><b>歌 单 推 荐</b></h2>
-			<div class="commend_nav a_theme">
-				<a href="">为你推荐</a>
-				<a href="">网络歌曲</a>
-				<a href="">经典</a>
-				<a href="">情歌</a>
-				<a href="">官方歌单</a>
-				<a href="">KTV热歌</a>	   
+			<div class="common_nav a_theme"  id="myTab">
+				<a href="#reco_for_you" data-toggle="tab" style="color: #31c27c;">为你推荐</a>
+				<a href="#web_song" data-toggle="tab">网络歌曲</a>
+				<a href="#classics" data-toggle="tab">经典</a>
+				<a href="#love_song" data-toggle="tab">情歌</a>
+				<a href="#official" data-toggle="tab">官方歌单</a>
+				<a href="#KTV_hot" data-toggle="tab">KTV热歌</a>	   
 			</div>
-			
-			<div class="index_slide">
-				<ul class="list-unstyled">
-					<li class="a_theme">
-						<div class="slide_pic">
-							<img src="img/slide_1.jpg" alt="" />
-						</div>
-						<a href="" class="lh_30">每日新歌：小镇青年的爱情故事</a>
-						<p class="p_gray">播放量：1.3万</p>
-						<i class="song_play"><img src="img/play.png"/></i>
-					</li>
-					<li class="a_theme">
-						<div class="slide_pic">
-							<img src="img/slide_2.jpg" alt="" />
-						</div>
-						<a href="" class="lh_30">离别不再见，会有相见的那一天</a>
-						<p class="p_gray">播放量：1.3万</p>
-						<i></i>
-					</li>
-					<li class="a_theme">
-						<div class="slide_pic">
-							<img src="img/slide_3.jpg" alt="" />
-						</div>
-						<a href="" class="lh_30">心情调味剂 · 这些歌有点小俏皮</a>
-						<p class="p_gray">播放量：1.3万</p>
-						<i></i>
-					</li>
-					<li class="a_theme">
-						<div class="slide_pic">
-							<img src="img/slide_4.jpg" alt="" />
-						</div>
-						<a href="" class="lh_30">治愈良药 ：旅行中吹来的耳畔清风</a>
-						<p class="p_gray">播放量：1.3万</p>
-						<i></i>
-					</li>
-					<li class="nomargin a_theme">
-						<div class="slide_pic">
-							<img src="img/slide_5.jpg" alt="" />
-						</div>
-						<a href="" class="lh_30">独具魅力 | 欧美磁性男声集</a>
-						<p class="p_gray">播放量：1.3万</p>
-						<i></i>
-					</li>
-				</ul>
+			<div id="myTabContent" class="tab-content">
+				<div class="index_slide tab-pane fade in active" id="reco_for_you">
+					<ul class="list-unstyled">
+						<li class="a_theme">
+							<div class="slide_pic">
+								<img src="img/slide_1.jpg" alt="" />
+								<i class="song_play"><img src="img/play.png"/></i>
+							</div>
+							<a href="" class="lh_30">每日新歌：小镇青年的爱情故事</a>
+							<p class="p_gray">播放量：1.3万</p>
+							
+						</li>
+						<li class="a_theme">
+							<div class="slide_pic">
+								<img src="img/slide_2.jpg" alt="" />
+								<i class="song_play"><img src="img/play.png"/></i>
+							</div>
+							<a href="" class="lh_30">离别不再见，会有相见的那一天</a>
+							<p class="p_gray">播放量：1.3万</p>
+							<i></i>
+						</li>
+						<li class="a_theme">
+							<div class="slide_pic">
+								<img src="img/slide_3.jpg" alt="" />
+								<i class="song_play"><img src="img/play.png"/></i>
+							</div>
+							<a href="" class="lh_30">心情调味剂 · 这些歌有点小俏皮</a>
+							<p class="p_gray">播放量：1.3万</p>
+							<i></i>
+						</li>
+						<li class="a_theme">
+							<div class="slide_pic">
+								<img src="img/slide_4.jpg" alt="" />
+								<i class="song_play"><img src="img/play.png"/></i>
+							</div>
+							<a href="" class="lh_30">治愈良药 ：旅行中吹来的耳畔清风</a>
+							<p class="p_gray">播放量：1.3万</p>
+							<i></i>
+						</li>
+						<li class="nomargin a_theme" style="margin-right: 0px;">
+							<div class="slide_pic">
+								<img src="img/slide_5.jpg" alt="" />
+								<i class="song_play"><img src="img/play.png"/></i>
+							</div>
+							<a href="" class="lh_30">独具魅力 | 欧美磁性男声集</a>
+							<p class="p_gray">播放量：1.3万</p>
+							<i></i>
+						</li>
+					</ul>
+				</div>
+				<div class="index_slide tab-pane fade" id="web_song">
+					<ul class="list-unstyled">
+						<li class="a_theme">
+							<div class="slide_pic">
+								<img src="img/slide_.jpg" alt="" />
+								<i class="song_play"><img src="img/play.png"/></i>
+							</div>
+							<a href="" class="lh_30">每日新歌：小镇青年的爱情故事</a>
+							<p class="p_gray">播放量：1.3万</p>
+							
+						</li>
+						<li class="a_theme">
+							<div class="slide_pic">
+								<img src="img/slide_2.jpg" alt="" />
+								<i class="song_play"><img src="img/play.png"/></i>
+							</div>
+							<a href="" class="lh_30">离别不再见，会有相见的那一天</a>
+							<p class="p_gray">播放量：1.3万</p>
+							<i></i>
+						</li>
+						<li class="a_theme">
+							<div class="slide_pic">
+								<img src="img/slide_3.jpg" alt="" />
+								<i class="song_play"><img src="img/play.png"/></i>
+							</div>
+							<a href="" class="lh_30">心情调味剂 · 这些歌有点小俏皮</a>
+							<p class="p_gray">播放量：1.3万</p>
+							<i></i>
+						</li>
+						<li class="a_theme">
+							<div class="slide_pic">
+								<img src="img/slide_4.jpg" alt="" />
+								<i class="song_play"><img src="img/play.png"/></i>
+							</div>
+							<a href="" class="lh_30">治愈良药 ：旅行中吹来的耳畔清风</a>
+							<p class="p_gray">播放量：1.3万</p>
+							<i></i>
+						</li>
+						<li class="nomargin a_theme" style="margin-right: 0px;">
+							<div class="slide_pic">
+								<img src="img/slide_5.jpg" alt="" />
+								<i class="song_play"><img src="img/play.png"/></i>
+							</div>
+							<a href="" class="lh_30">独具魅力 | 欧美磁性男声集</a>
+							<p class="p_gray">播放量：1.3万</p>
+							<i></i>
+						</li>
+					</ul>
+				</div>
+				<div class="index_slide tab-pane fade" id="classics">
+					<ul class="list-unstyled">
+						<li class="a_theme">
+							<div class="slide_pic">
+								<img src="img/slide_.jpg" alt="" />
+								<i class="song_play"><img src="img/play.png"/></i>
+							</div>
+							<a href="" class="lh_30">每日新歌：小镇青年的爱情故事</a>
+							<p class="p_gray">播放量：1.3万</p>
+							
+						</li>
+						<li class="a_theme">
+							<div class="slide_pic">
+								<img src="img/slide_2.jpg" alt="" />
+								<i class="song_play"><img src="img/play.png"/></i>
+							</div>
+							<a href="" class="lh_30">离别不再见，会有相见的那一天</a>
+							<p class="p_gray">播放量：1.3万</p>
+							<i></i>
+						</li>
+						<li class="a_theme">
+							<div class="slide_pic">
+								<img src="img/slide_3.jpg" alt="" />
+								<i class="song_play"><img src="img/play.png"/></i>
+							</div>
+							<a href="" class="lh_30">心情调味剂 · 这些歌有点小俏皮</a>
+							<p class="p_gray">播放量：1.3万</p>
+							<i></i>
+						</li>
+						<li class="a_theme">
+							<div class="slide_pic">
+								<img src="img/slide_4.jpg" alt="" />
+								<i class="song_play"><img src="img/play.png"/></i>
+							</div>
+							<a href="" class="lh_30">治愈良药 ：旅行中吹来的耳畔清风</a>
+							<p class="p_gray">播放量：1.3万</p>
+							<i></i>
+						</li>
+						<li class="nomargin a_theme" style="margin-right: 0px;">
+							<div class="slide_pic">
+								<img src="img/slide_5.jpg" alt="" />
+								<i class="song_play"><img src="img/play.png"/></i>
+							</div>
+							<a href="" class="lh_30">独具魅力 | 欧美磁性男声集</a>
+							<p class="p_gray">播放量：1.3万</p>
+							<i></i>
+						</li>
+					</ul>
+				</div>
+				<div class="index_slide tab-pane fade" id="love_song">
+					<ul class="list-unstyled">
+						<li class="a_theme">
+							<div class="slide_pic">
+								<img src="img/slide_.jpg" alt="" />
+								<i class="song_play"><img src="img/play.png"/></i>
+							</div>
+							<a href="" class="lh_30">每日新歌：小镇青年的爱情故事</a>
+							<p class="p_gray">播放量：1.3万</p>
+							
+						</li>
+						<li class="a_theme">
+							<div class="slide_pic">
+								<img src="img/slide_2.jpg" alt="" />
+								<i class="song_play"><img src="img/play.png"/></i>
+							</div>
+							<a href="" class="lh_30">离别不再见，会有相见的那一天</a>
+							<p class="p_gray">播放量：1.3万</p>
+							<i></i>
+						</li>
+						<li class="a_theme">
+							<div class="slide_pic">
+								<img src="img/slide_3.jpg" alt="" />
+								<i class="song_play"><img src="img/play.png"/></i>
+							</div>
+							<a href="" class="lh_30">心情调味剂 · 这些歌有点小俏皮</a>
+							<p class="p_gray">播放量：1.3万</p>
+							<i></i>
+						</li>
+						<li class="a_theme">
+							<div class="slide_pic">
+								<img src="img/slide_4.jpg" alt="" />
+								<i class="song_play"><img src="img/play.png"/></i>
+							</div>
+							<a href="" class="lh_30">治愈良药 ：旅行中吹来的耳畔清风</a>
+							<p class="p_gray">播放量：1.3万</p>
+							<i></i>
+						</li>
+						<li class="nomargin a_theme" style="margin-right: 0px;">
+							<div class="slide_pic">
+								<img src="img/slide_5.jpg" alt="" />
+								<i class="song_play"><img src="img/play.png"/></i>
+							</div>
+							<a href="" class="lh_30">独具魅力 | 欧美磁性男声集</a>
+							<p class="p_gray">播放量：1.3万</p>
+							<i></i>
+						</li>
+					</ul>
+				</div>
+				<div class="index_slide tab-pane fade" id="official">
+					<ul class="list-unstyled">
+						<li class="a_theme">
+							<div class="slide_pic">
+								<img src="img/slide_.jpg" alt="" />
+								<i class="song_play"><img src="img/play.png"/></i>
+							</div>
+							<a href="" class="lh_30">每日新歌：小镇青年的爱情故事</a>
+							<p class="p_gray">播放量：1.3万</p>
+							
+						</li>
+						<li class="a_theme">
+							<div class="slide_pic">
+								<img src="img/slide_2.jpg" alt="" />
+								<i class="song_play"><img src="img/play.png"/></i>
+							</div>
+							<a href="" class="lh_30">离别不再见，会有相见的那一天</a>
+							<p class="p_gray">播放量：1.3万</p>
+							<i></i>
+						</li>
+						<li class="a_theme">
+							<div class="slide_pic">
+								<img src="img/slide_3.jpg" alt="" />
+								<i class="song_play"><img src="img/play.png"/></i>
+							</div>
+							<a href="" class="lh_30">心情调味剂 · 这些歌有点小俏皮</a>
+							<p class="p_gray">播放量：1.3万</p>
+							<i></i>
+						</li>
+						<li class="a_theme">
+							<div class="slide_pic">
+								<img src="img/slide_4.jpg" alt="" />
+								<i class="song_play"><img src="img/play.png"/></i>
+							</div>
+							<a href="" class="lh_30">治愈良药 ：旅行中吹来的耳畔清风</a>
+							<p class="p_gray">播放量：1.3万</p>
+							<i></i>
+						</li>
+						<li class="nomargin a_theme" style="margin-right: 0px;">
+							<div class="slide_pic">
+								<img src="img/slide_5.jpg" alt="" />
+								<i class="song_play"><img src="img/play.png"/></i>
+							</div>
+							<a href="" class="lh_30">独具魅力 | 欧美磁性男声集</a>
+							<p class="p_gray">播放量：1.3万</p>
+							<i></i>
+						</li>
+					</ul>
+				</div>
+				<div class="index_slide tab-pane fade" id="KTV_hot">
+					<ul class="list-unstyled">
+						<li class="a_theme">
+							<div class="slide_pic">
+								<img src="img/slide_.jpg" alt="" />
+								<i class="song_play"><img src="img/play.png"/></i>
+							</div>
+							<a href="" class="lh_30">每日新歌：小镇青年的爱情故事</a>
+							<p class="p_gray">播放量：1.3万</p>
+							
+						</li>
+						<li class="a_theme">
+							<div class="slide_pic">
+								<img src="img/slide_2.jpg" alt="" />
+								<i class="song_play"><img src="img/play.png"/></i>
+							</div>
+							<a href="" class="lh_30">离别不再见，会有相见的那一天</a>
+							<p class="p_gray">播放量：1.3万</p>
+							<i></i>
+						</li>
+						<li class="a_theme">
+							<div class="slide_pic">
+								<img src="img/slide_3.jpg" alt="" />
+								<i class="song_play"><img src="img/play.png"/></i>
+							</div>
+							<a href="" class="lh_30">心情调味剂 · 这些歌有点小俏皮</a>
+							<p class="p_gray">播放量：1.3万</p>
+							<i></i>
+						</li>
+						<li class="a_theme">
+							<div class="slide_pic">
+								<img src="img/slide_4.jpg" alt="" />
+								<i class="song_play"><img src="img/play.png"/></i>
+							</div>
+							<a href="" class="lh_30">治愈良药 ：旅行中吹来的耳畔清风</a>
+							<p class="p_gray">播放量：1.3万</p>
+							<i></i>
+						</li>
+						<li class="nomargin a_theme" style="margin-right: 0px;">
+							<div class="slide_pic">
+								<img src="img/slide_5.jpg" alt="" />
+								<i class="song_play"><img src="img/play.png"/></i>
+							</div>
+							<a href="" class="lh_30">独具魅力 | 欧美磁性男声集</a>
+							<p class="p_gray">播放量：1.3万</p>
+							<i></i>
+						</li>
+					</ul>
+				</div>
 			</div>
 		</div>
 		<!--新歌首发-->
+		<div class="common_part">
+			<h2><b>新 歌 首 发</b></h2>
+			<div class="new_song common_nav a_theme"  id="myTab">    
+				<a href="#inland" data-toggle="tab" style="color: #31c27c;">内地</a>
+				<a href="#HK_TW" data-toggle="tab">港台</a>
+				<a href="#western" data-toggle="tab">欧美</a>
+				<a href="#Japan" data-toggle="tab">日本</a>
+				<a href="#Korea" data-toggle="tab">韩国</a> 
+			</div>
+		</div>
+		
 		<!--排行榜-->
 		<!--MV-->
 		<!--底部-->
